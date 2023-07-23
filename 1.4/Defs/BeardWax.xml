@@ -4,7 +4,7 @@
     <ThingDef ParentName="MakeableDrugBase">
         <defName>SD_BeardWax</defName>
         <label>beard wax</label>
-        <description>A quality hair wax specially made for styling the prodigious hair of the stoneborn. Even a delicate application of it imparts an alluring sheen on the beards of quarry-worn dwarves while putting stray strands of hair in their place; perfect for any social function where impressions matter.</description>
+        <description>A quality hair wax specially made for styling the prodigious hair of the stoneborn. Application of a tin of beard wax imparts an alluring sheen on the beards of even the most quarry-worn dwarves, while putting stray strands of hair in their place; perfect for any social function where impressions matter. For those unfortunate enough to not have a prodigious beard, it is also a lovely facial moisturizer.</description>
 		<possessionCount>3</possessionCount>
         <techLevel>Industrial</techLevel>
         <stackLimit>35</stackLimit>
