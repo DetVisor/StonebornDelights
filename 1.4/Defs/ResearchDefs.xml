@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>StonebornTab</defName>
+    <label>Stoneborn</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>BladerootResearch</defName>
+    <label>bladeroot sowing</label>
+    <tab>StonebornTab</tab>
+    <description>Plant bladeroot, a small robust root with silvery leaves that can be rolled into useful cigars.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.35</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ShroomAleResearch</defName>
+    <label>stoutcap sowing</label>
+    <tab>StonebornTab</tab>
+    <description>Plant stoutcap, a mushy small fungus that can be directly brewed into shroom ale.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.15</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ProcessedDrugsResearch</defName>
+    <label>complex drugs</label>
+    <tab>StonebornTab</tab>
+    <description>Create complex concoctions of drugs, utilizing neutroamine and various other chemicals.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.15</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>
