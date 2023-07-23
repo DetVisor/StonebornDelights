@@ -4,7 +4,7 @@
     <ThingDef ParentName="MakeableDrugBase">
         <defName>SD_MinersDelight</defName>
         <label>miner's delight</label>
-        <description>A green and gold powdery preparation often used by stoneborn who make a living in the quarries. While inhaling a concoction of powdered minerals and plant leaves may seem ill advised, those who do enter a state of higher mental fortitude: useful in a high-risk environment like a deep-shaft mine.\n\That levelheadedness lets miners focus on the rocks they pick at, allowing them to notice minute veins of ore they might have otherwise ignored as dross.</description>
+        <description>A green and gold powder often used by stoneborn who make a living in the quarries. While inhaling a concoction of powdered minerals and plant leaves may seem ill advised, those who do enter a state of higher mental fortitude: useful in a high-risk environment like a deep-shaft mine.\n\That levelheadedness lets miners focus on the rocks they pick at, allowing them to notice minute veins of ore they might have otherwise ignored as dross.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_MDHigh</HediffDef>
           <HediffDef>SD_MineralTolerance</HediffDef>
