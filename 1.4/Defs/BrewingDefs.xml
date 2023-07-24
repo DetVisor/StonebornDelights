@@ -33,7 +33,7 @@
 </ProcessorFramework.ProcessDef>
 
 
-  <ThingDef ParentName="BuildingBase">
+<!-- <ThingDef ParentName="BuildingBase">
     <defName>SD_ShroomBrewKettle</defName>
     <label>brewing kettle</label>
     <description>A rustic brew kettle used to brew shroom ale.</description>
@@ -109,5 +109,74 @@
       <li>BuildingsProduction</li>
     </thingCategories>
   </ThingDef>
+-->
+
+<ThingDef ParentName="BuildingBase">
+  <defName>SD_ShroomAleBarrel</defName>
+  <label>ale barrel</label>
+  <description>A rustic sealed barrel used to brew shroom ale.</description>
+  <drawerType>MapMeshAndRealTime</drawerType>
+  <graphicData>
+    <texPath>Things/Buildings/AleBarrel</texPath>
+    <drawSize>1.5</drawSize>
+    <drawRotated>false</drawRotated>
+    <drawOffset>(0,0,0)</drawOffset>
+    <graphicClass>Graphic_Single</graphicClass>
+    <damageData>
+      <rect>(0.05,0.1,0.9,0.9)</rect>
+    </damageData>
+    <shadowData>
+      <volume>(0.75, 0.35, 0.33)</volume>
+    </shadowData>
+  </graphicData>
+<size>(1,1)</size>
+<costList>
+  <WoodLog>25</WoodLog>
+  <Steel>5</Steel>
+</costList>
+  <minifiedDef>MinifiedThing</minifiedDef>
+  <altitudeLayer>Building</altitudeLayer>
+  <passability>PassThroughOnly</passability>
+  <fillPercent>0.45</fillPercent>
+  <pathCost>42</pathCost>
+  <statBases>
+    <WorkToBuild>1100</WorkToBuild>
+    <Mass>8</Mass>
+    <MaxHitPoints>120</MaxHitPoints>
+    <Flammability>1</Flammability>
+  </statBases>
+  <comps>
+<li Class="CompProperties_Forbiddable"/>
+<li Class="ProcessorFramework.CompProperties_Processor">
+  <capacity>30</capacity>
+  <independentProcesses>false</independentProcesses>
+  <parallelProcesses>false</parallelProcesses>
+  <dropIngredients>false</dropIngredients>
+  <showProductIcon>false</showProductIcon>
+  <barOffset>(0.0, -0.15)</barOffset>
+  <barScale>(0.16, 2.8)</barScale>
+  <colorCoded>true</colorCoded>
+  <processes>
+    <li>SD_ShroomaleBrewing</li>
+  </processes>
+</li>
+</comps>
+<tickerType>Rare</tickerType>
+<rotatable>false</rotatable>
+<designationCategory>Production</designationCategory>
+  <uiOrder>2790</uiOrder>
+  <building>
+    <buildingTags>
+      <li>Production</li>
+    </buildingTags>
+    <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+  </building>
+  <researchPrerequisites>
+   <li>ShroomAleResearch</li>
+  </researchPrerequisites>
+  <thingCategories>
+    <li>BuildingsProduction</li>
+  </thingCategories>
+</ThingDef>
 
 </Defs>

@@ -18,7 +18,7 @@
       <texPath>Things/ShroomAle</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <equippedAngleOffset>0</equippedAngleOffset>
+    <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
     <stackLimit>10</stackLimit>
     <statBases>
@@ -105,8 +105,8 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>Drunk</stateEffecter>
-        <severityIndices>3~5</severityIndices>
+        <stateEffecter>AleDrunk</stateEffecter>
+        <severityIndices>2~5</severityIndices>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
@@ -114,7 +114,6 @@
       </li>
     </comps>
       <stages>
-	  
         <li>
           <label>warm</label>
 		  
