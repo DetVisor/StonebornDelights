@@ -119,7 +119,7 @@
 		  
           <statOffsets>
 		  
-					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 
 		   </statOffsets>	
 				
@@ -127,7 +127,7 @@
             <capMods>
               <li>
                 <capacity>Manipulation</capacity>
-                <offset>-0.04</offset>
+                <offset>-0.02</offset>
               </li>
             </capMods>
         </li>
@@ -139,7 +139,7 @@
 		  
 		    <statOffsets>
 			
-					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
 
 		    </statOffsets>	
 		  
@@ -147,7 +147,7 @@
             <capMods>
 			   <li>
                 <capacity>Manipulation</capacity>
-                <offset>-0.09</offset>
+                <offset>-0.05</offset>
               </li>
 			  <li>
 			   <capacity>Moving</capacity>
@@ -175,7 +175,7 @@
             <capMods>
               <li>
                 <capacity>Manipulation</capacity>
-                <postFactor>-0.18</postFactor>
+                <postFactor>0.25</postFactor>
               </li>
               <li>
                 <capacity>Moving</capacity>
@@ -198,7 +198,7 @@
             <capMods>
 			   <li>
                 <capacity>Manipulation</capacity>
-                <offset>-0.32</offset>
+                <offset>0.32</offset>
               </li>
 			  <li>
 			   <capacity>Moving</capacity>
