@@ -4,7 +4,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>SD_ShroomAle</defName>
     <label>shroom ale</label>
-    <description>A flavorful beer first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
+    <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_AleHigh</HediffDef>
       <HediffDef>SD_AleTolerance</HediffDef>
@@ -45,7 +45,7 @@
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SD_AleHigh</hediffDef>
           <severity>0.15</severity>
-          <toleranceChemical>Alcohol</toleranceChemical>
+          <toleranceChemical>SD_Ale</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SD_AleTolerance</hediffDef>
@@ -282,12 +282,12 @@
   <ThoughtDef>
     <defName>Inebriated</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>AlcoholHigh</hediff>
+    <hediff>SD_AleHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
       <li>
-        <label>alcohol warmth</label>
+        <label>ale warmth</label>
         <description>I'm feeling a little bit energetic. That's good!</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
