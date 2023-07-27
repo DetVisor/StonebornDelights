@@ -26,8 +26,8 @@
   <altitudeLayer>MetaOverlays</altitudeLayer>
   <mote>
     <fadeInTime>0.30</fadeInTime>
-    <solidTime>1.0</solidTime>
-    <fadeOutTime>0.70</fadeOutTime>
+    <solidTime>0.80</solidTime>
+    <fadeOutTime>0.40</fadeOutTime>
     <attachedDrawOffset>(0, 0, 0.1)</attachedDrawOffset>
   </mote>
 </ThingDef>
@@ -52,11 +52,13 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
-        <scale>0.2~0.3</scale>
-        <chancePerTick>0.02</chancePerTick>
-        <positionRadius>0.5</positionRadius>
+        <scale>0.1~0.3</scale>
+        <chancePerTick>0.01</chancePerTick>
+        <positionRadius>0.4</positionRadius>
+        <burstCount>2~3</burstCount>
         <moteDef>Mote_GlimmerSparkles</moteDef>
         <speed>0</speed>
+        <rotation>0</rotation>
         <angle>0</angle>
       </li>
     </children>
