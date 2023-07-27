@@ -344,7 +344,7 @@
     <label>ale</label>
     <addictionHediff>SD_AleAddiction</addictionHediff>
     <toleranceHediff>SD_AleTolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedToleranceChance>0.4</onGeneratedAddictedToleranceChance>
     <onGeneratedAddictedEvents>
       <li>
         <hediff>Cirrhosis</hediff>

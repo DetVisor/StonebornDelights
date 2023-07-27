@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Glimmerquartz</defName>
+    <label>glimmer rubble</label>
+    <graphicData>
+      <texPath>Things/GlimmerMisc/GlimmerquartzFilth</texPath>
+    </graphicData>
+    <filth>
+      <disappearsInDays>45~50</disappearsInDays>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+    </filth>
+  </ThingDef>
+  
+
     <ThingDef ParentName="RockBase">
         <defName>SD_GlimmerquartzOre</defName>
         <label>glimmerquartz</label>
         <description>A bright, pinkish crystal. The sun filters through it, basking the ground around it in a beautiful pink.</description>
         <graphicData>
-          <texPath>Things/Walls/GlimmerQuartzWall</texPath>
+          <texPath>Things/GlimmerMisc/GlimmerquartzWalls/AtlasA</texPath>
           <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <filthLeaving>Filth_Blood</filthLeaving>
+        <filthLeaving>Filth_Glimmerquartz</filthLeaving>
         <statBases>
           <MaxHitPoints>250</MaxHitPoints>
         </statBases>
@@ -17,8 +30,8 @@
          <isResourceRock>true</isResourceRock>
           <mineableThing>ChunkGlimmer</mineableThing>
           <mineableDropChance>0.25</mineableDropChance>
-          <mineableScatterCommonality>0.30</mineableScatterCommonality> <!-- SUGAAAAAAAAAHHHHHH -->
-          <mineableScatterLumpSizeRange>4~7</mineableScatterLumpSizeRange>
+          <mineableScatterCommonality>0.40</mineableScatterCommonality> <!-- SUGAAAAAAAAAHHHHHH -->
+          <mineableScatterLumpSizeRange>7~11</mineableScatterLumpSizeRange>
         </building>
       </ThingDef>
 
@@ -28,7 +41,7 @@
         <label>glimmerquartz chunk</label>
         <description>A chunk of glimmer. Can be cut into valuable crystals.</description>
         <graphicData>
-          <texPath>Things/GlimmerquartzChunk</texPath>
+          <texPath>Things/GlimmerMisc/GlimmerquartzChunks</texPath>
           <graphicClass>Graphic_Random</graphicClass>
           <flipExtraRotation>60</flipExtraRotation>
         </graphicData>
@@ -151,6 +164,10 @@
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
+          <li Class="HediffCompProperties_Effecter">
+            <stateEffecter>Glimmering</stateEffecter>
+            <severityIndices>0~1</severityIndices>
+          </li>
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-2</severityPerDay>
             <showHoursToRecover>true</showHoursToRecover>

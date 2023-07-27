@@ -15,6 +15,22 @@
           <attachedDrawOffset>(0, 0, 0.1)</attachedDrawOffset>
         </mote>
   </ThingDef>
+  
+ <ThingDef ParentName="MoteBase">
+  <defName>Mote_GlimmerSparkles</defName>
+  <graphicData>
+    <texPath>Things/Motes/GlimmerSparkles</texPath>
+    <shaderType>MoteGlow</shaderType>
+  </graphicData>
+  <thingClass>MoteThrownAttached</thingClass>
+  <altitudeLayer>MetaOverlays</altitudeLayer>
+  <mote>
+    <fadeInTime>0.30</fadeInTime>
+    <solidTime>1.0</solidTime>
+    <fadeOutTime>0.70</fadeOutTime>
+    <attachedDrawOffset>(0, 0, 0.1)</attachedDrawOffset>
+  </mote>
+</ThingDef>
 
   <EffecterDef>
     <defName>AleDrunk</defName>
@@ -31,5 +47,19 @@
     </children>
   </EffecterDef>
   
+  <EffecterDef>
+    <defName>Glimmering</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.2~0.3</scale>
+        <chancePerTick>0.02</chancePerTick>
+        <positionRadius>0.5</positionRadius>
+        <moteDef>Mote_GlimmerSparkles</moteDef>
+        <speed>0</speed>
+        <angle>0</angle>
+      </li>
+    </children>
+  </EffecterDef>
   
 </Defs>
