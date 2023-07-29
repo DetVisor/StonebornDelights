@@ -19,7 +19,7 @@
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
-    <stackLimit>12</stackLimit>
+    <stackLimit>25</stackLimit>
     <statBases>
       <DeteriorationRate>0.3</DeteriorationRate>
       <MarketValue>60</MarketValue>
@@ -108,7 +108,7 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>AleDrunk</stateEffecter>
+        <stateEffecter>Glimmering</stateEffecter>
         <severityIndices>2~5</severityIndices>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">

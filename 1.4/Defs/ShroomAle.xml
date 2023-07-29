@@ -20,7 +20,7 @@
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
-    <stackLimit>10</stackLimit>
+    <stackLimit>30</stackLimit>
     <statBases>
       <DeteriorationRate>0.5</DeteriorationRate>
       <MarketValue>22</MarketValue>
