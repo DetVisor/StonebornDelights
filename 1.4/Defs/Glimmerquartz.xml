@@ -98,6 +98,9 @@
           <MarketValue>36</MarketValue>
           <Mass>0.1</Mass>
         </statBases>
+        <deepCommonality>0.6</deepCommonality>
+        <deepCountPerPortion>8</deepCountPerPortion>
+        <deepLumpSizeRange>4~6</deepLumpSizeRange>
         <techLevel>Industrial</techLevel>
         <ingestible>
           <joyKind>Chemical</joyKind>

@@ -65,6 +65,102 @@
   </bonusOutputs>
 </ProcessorFramework.ProcessDef>
 
+<ProcessorFramework.ProcessDef>
+  <defName>SD_ElixirBrewing</defName>
+  <thingDef>SD_RageElixir</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>SD_ElixirMush</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>15</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>0~24</temperatureSafe>
+  <temperatureIdeal>4~12</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.3</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix>_elixir</filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <customLabel>added</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <SD_Fey>(0.1, 1)</SD_Fey>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef>
+  <defName>SD_LiquorBrewing</defName>
+  <thingDef>SD_ForgeLiquor</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>SD_LiquorSmush</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>25</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>3</capacityFactor>
+  <efficiency>1</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>18~80</temperatureSafe>
+  <temperatureIdeal>22~40</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.3</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix>_liquor</filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <customLabel>added</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <SD_Fey>(0.1, 1)</SD_Fey>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef>
+  <defName>SD_MeadBrewing</defName>
+  <thingDef>SD_HiveMead</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>InsectJelly</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>18</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>0.5</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>18~24</temperatureSafe>
+  <temperatureIdeal>10~32</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.3</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix>_mead</filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <customLabel>added</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <SD_Fey>(0.1, 1)</SD_Fey>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
 
 <!-- <ThingDef ParentName="BuildingBase">
     <defName>SD_ShroomBrewKettle</defName>
@@ -191,6 +287,9 @@
   <processes>
     <li>SD_ShroomaleBrewing</li>
     <li>SD_SweetwineBrewing</li>
+    <li>SD_ElixirBrewing</li>
+    <li>SD_LiquorBrewing</li>
+    <li>SD_MeadBrewing</li>
   </processes>
 </li>
 </comps>
