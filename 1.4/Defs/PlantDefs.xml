@@ -35,7 +35,7 @@
       </sowTags>
 	    <sowMinSkill>4</sowMinSkill>
 	    <sowResearchPrerequisites>
-        <li>ShroomAleResearch</li>
+        <li>SD_DwarvenDrugPlants</li>
       </sowResearchPrerequisites>
       <topWindExposure>0</topWindExposure>
       <growDays>8</growDays>
@@ -106,7 +106,7 @@
       </sowTags>
 	    <sowMinSkill>5</sowMinSkill>
 	    <sowResearchPrerequisites>
-        <li>BladerootResearch</li>
+        <li>SD_DwarvenDrugPlants</li>
       </sowResearchPrerequisites>
       <topWindExposure>0</topWindExposure>
       <growDays>10.5</growDays>
@@ -177,7 +177,7 @@
       </sowTags>
 	    <sowMinSkill>7</sowMinSkill>
 	    <sowResearchPrerequisites>
-        <li>BladerootResearch</li>
+        <li>SD_DwarvenDrugPlants</li>
       </sowResearchPrerequisites>
       <topWindExposure>0</topWindExposure>
       <growDays>14</growDays>

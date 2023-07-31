@@ -137,6 +137,7 @@
     <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>1000</workAmount>
     <targetCountAdjustment>1</targetCountAdjustment>
+    <researchPrerequisite>SD_ProcessedDrugs</researchPrerequisite>
     <recipeUsers>
       <li>ElectricSmelter</li>
     </recipeUsers>
@@ -177,6 +178,54 @@
     </fixedIngredientFilter>
     <products>
       <SD_LiquorSmush>5</SD_LiquorSmush>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>SD_MakeElixirMush</defName>
+    <label>make elixir mush</label>
+    <description>Make elixir smush from bladeroota and bull's horns..</description>
+    <jobString>Making elixir mush.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <researchPrerequisite>SD_ProcessedDrugs</researchPrerequisite>
+    <recipeUsers>
+      <li>Brewery</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SD_RawBullHorns</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SD_RawBladeroot</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SD_RawStoutcap</li>
+        <li>SD_RawBladeroot</li>
+      </thingDefs>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <SD_ElixirMush>5</SD_ElixirMush>
     </products>
   </RecipeDef>
 </Defs>

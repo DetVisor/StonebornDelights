@@ -132,7 +132,6 @@
           </outcomeDoers>
           </ingestible>
           <recipeMaker>
-          <researchPrerequisite>ProcessedDrugsResearch</researchPrerequisite>
           <recipeUsers>
             <li>DrugLab</li>
           </recipeUsers>

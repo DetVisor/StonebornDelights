@@ -46,7 +46,7 @@
           <Steel>4</Steel>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>ProcessedDrugsResearch</researchPrerequisite>
+            <researchPrerequisite>SD_ProcessedDrugs</researchPrerequisite>
             <skillRequirements>
                 <Intellectual>6</Intellectual>
             </skillRequirements>

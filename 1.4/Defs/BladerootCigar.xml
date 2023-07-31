@@ -73,7 +73,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-      <researchPrerequisite>BladerootResearch</researchPrerequisite>
+      <researchPrerequisite>SD_DwarvenDrugPlants</researchPrerequisite>
       <recipeUsers>
         <li>CraftingSpot</li>
         <li>DrugLab</li>

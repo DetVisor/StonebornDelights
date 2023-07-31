@@ -60,7 +60,7 @@
           </outcomeDoers>
         </ingestible>
         <recipeMaker>
-          <researchPrerequisite>ProcessedDrugsResearch</researchPrerequisite>
+          <researchPrerequisite>SD_ProcessedDrugs</researchPrerequisite>
           <recipeUsers>
             <li>DrugLab</li>
           </recipeUsers>
