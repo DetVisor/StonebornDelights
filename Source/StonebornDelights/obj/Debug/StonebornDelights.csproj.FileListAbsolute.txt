@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\bin\Debug\StonebornDelights.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\bin\Debug\StonebornDelights.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\obj\Debug\StonebornDelights.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\obj\Debug\StonebornDelights.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\obj\Debug\StonebornDelights.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\obj\Debug\StonebornDelights.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.4\Assemblies\StonebornDelights.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.4\Assemblies\StonebornDelights.pdb
