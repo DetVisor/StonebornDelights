@@ -4,7 +4,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_HiveMead</defName>
         <label>hive mead</label>
-        <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
+        <description>A boozy yet sweet drink brewed in the depths of caveworlds. The high glucose content of insect jelly makes for a wonderfully saccharine and pleasant mead which goes down with ease. Although ome folk say it makes them sleepier, it's probably just the alcohol getting to their head.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_HiveHigh</HediffDef>
           <HediffDef>SD_HiveTolerance</HediffDef>
@@ -99,7 +99,7 @@
         <label>hive mead high</label>
         <labelNoun>drunkenness</labelNoun>
         <description>Hive mead is in the veins, it raises moods and lowers the chance of violence, but makes pawns sleepier.</description>
-        <hediffClass>Hediff_Alcohol</hediffClass>
+        <hediffClass>Hediff_High</hediffClass>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <isBad>false</isBad>
@@ -111,6 +111,10 @@
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.75</severityPerDay>
             <showHoursToRecover>true</showHoursToRecover>
+          </li>
+          <li Class="StonebornDelights.HediffCompProperties_Hangover">
+            <hangover>SD_LightHangover</hangover>
+            <minHangoverStage>3</minHangoverStage>
           </li>
         </comps>
           <stages>
@@ -175,55 +179,6 @@
           </stages>
       </HediffDef>
 
-      
-  <HediffDef>
-    <defName>HiveHangover</defName>
-    <label>hangover</label>
-    <labelNoun>a hangover</labelNoun>
-    <description>An unpleasant delayed after-effect of mead intoxication.</description>
-    <hediffClass>Hediff_Hangover</hediffClass>
-    <initialSeverity>1</initialSeverity>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <label>slight</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.03</offset>
-            </li>
-          </capMods>
-      </li>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <label>strong</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.08</offset>
-            </li>
-          </capMods>
-      </li>
-      <!-- starts low because it isn't visible until alcohol hediff is gone-->
-      <li>
-        <minSeverity>0.40</minSeverity>
-        <label>pounding</label>
-        <vomitMtbDays>0.4</vomitMtbDays>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.18</offset>
-            </li>
-          </capMods>
-      </li>
-    </stages>
-  </HediffDef>
   
   <ThoughtDef>
     <defName>HiveInebriated</defName>

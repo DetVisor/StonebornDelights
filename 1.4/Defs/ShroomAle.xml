@@ -6,10 +6,10 @@
     <label>shroom ale</label>
     <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
     <descriptionHyperlinks>
-      <HediffDef>SD_AleHigh</HediffDef>
+      <HediffDef>SD_ShroomHigh</HediffDef>
       <HediffDef>SD_AleTolerance</HediffDef>
       <HediffDef>SD_AleAddiction</HediffDef>
-      <HediffDef>Hangover</HediffDef>
+      <HediffDef>SD_LightHangover</HediffDef>
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
@@ -43,7 +43,7 @@
       <tableDesired>false</tableDesired>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SD_AleHigh</hediffDef>
+          <hediffDef>SD_ShroomHigh</hediffDef>
           <severity>0.15</severity>
           <toleranceChemical>SD_Ale</toleranceChemical>
         </li>
@@ -95,11 +95,11 @@
   </ThingDef>
 
   <HediffDef>
-    <defName>SD_AleHigh</defName>
-    <label>ale high</label>
+    <defName>SD_ShroomHigh</defName>
+    <label>shroom ale high</label>
     <labelNoun>drunkenness</labelNoun>
     <description>Shroom ale is in the blood stream, it makes people happy, and buffs accuracy.</description>
-    <hediffClass>Hediff_Alcohol</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <isBad>false</isBad>
@@ -111,6 +111,10 @@
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="StonebornDelights.HediffCompProperties_Hangover">
+        <hangover>SD_LightHangover</hangover>
+        <minHangoverStage>3</minHangoverStage>
       </li>
     </comps>
       <stages>
@@ -230,59 +234,11 @@
       </stages>
   </HediffDef>
 
-  <HediffDef>
-    <defName>Hangover</defName>
-    <label>hangover</label>
-    <labelNoun>a hangover</labelNoun>
-    <description>An unpleasant delayed after-effect of alcohol intoxication.</description>
-    <hediffClass>Hediff_Hangover</hediffClass>
-    <initialSeverity>1</initialSeverity>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <label>slight</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.03</offset>
-            </li>
-          </capMods>
-      </li>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <label>strong</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.08</offset>
-            </li>
-          </capMods>
-      </li>
-      <!-- starts low because it isn't visible until alcohol hediff is gone-->
-      <li>
-        <minSeverity>0.40</minSeverity>
-        <label>pounding</label>
-        <vomitMtbDays>0.4</vomitMtbDays>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.18</offset>
-            </li>
-          </capMods>
-      </li>
-    </stages>
-  </HediffDef>
   
   <ThoughtDef>
     <defName>Inebriated</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SD_AleHigh</hediff>
+    <hediff>SD_ShroomHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
@@ -306,34 +262,6 @@
         <description>Wooo! Kill those damn insectoids! Pew pew!</description>
         <baseMoodEffect>24</baseMoodEffect>
       </li>   
-    </stages>
-  </ThoughtDef>
-
-  <ThoughtDef>
-    <defName>Hungover</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>Hangover</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>mild hangover</label>
-        <description>The headache is almost gone.</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>serious hangover</label>
-        <description>My head hurts from all that ale.</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-      <li>
-        <label>pounding hangover</label>
-        <description>It feels like a swarm of glyphids are biting at my skull.</description>
-        <baseMoodEffect>-12</baseMoodEffect>
-      </li>
-      <li>
-        <visible>false</visible>
-      </li>
     </stages>
   </ThoughtDef>
   
