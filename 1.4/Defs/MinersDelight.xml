@@ -14,7 +14,7 @@
         <graphicData>
           <texPath>Things/MinersDelight</texPath>
           <graphicClass>Graphic_StackCount</graphicClass>
-          <drawSize>0.75</drawSize>
+          <drawSize>0.90</drawSize>
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>

@@ -9,7 +9,7 @@
           <HediffDef>SD_HiveHigh</HediffDef>
           <HediffDef>SD_HiveTolerance</HediffDef>
           <HediffDef>SD_HiveAddiction</HediffDef>
-          <HediffDef>HiveHangover</HediffDef>
+          <HediffDef>SD_LightHangover</HediffDef>
           <HediffDef>Cirrhosis</HediffDef>
           <HediffDef>ChemicalDamageModerate</HediffDef>
         </descriptionHyperlinks>
@@ -207,34 +207,6 @@
         <description>Woooo! I could do this all day! Actually.. maybe not.</description>
         <baseMoodEffect>30</baseMoodEffect>
       </li>   
-    </stages>
-  </ThoughtDef>
-
-  <ThoughtDef>
-    <defName>HiveHungover</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>HiveHangover</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>mild hangover</label>
-        <description>The headache is almost gone.</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>serious hangover</label>
-        <description>My head hurts from all that ale.</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-      <li>
-        <label>pounding hangover</label>
-        <description>It feels like a swarm of glyphids are biting at my skull.</description>
-        <baseMoodEffect>-12</baseMoodEffect>
-      </li>
-      <li>
-        <visible>false</visible>
-      </li>
     </stages>
   </ThoughtDef>
   

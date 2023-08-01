@@ -8,7 +8,7 @@
     <descriptionHyperlinks>
       <HediffDef>SD_SWHigh</HediffDef>
       <HediffDef>SD_SWTolerance</HediffDef>
-      <HediffDef>Hangover</HediffDef>
+      <HediffDef>SD_LightHangover</HediffDef>
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
@@ -102,7 +102,7 @@
     <label>sweetwine rush</label>
     <labelNoun>drunkenness</labelNoun>
     <description>Sweetwine's in the blood stream, it makes people real happy. That's all.</description>
-    <hediffClass>Hediff_Alcohol</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0.6,1)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <isBad>false</isBad>
@@ -115,6 +115,10 @@
         <severityPerDay>-0.75</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
+      <li Class="StonebornDelights.HediffCompProperties_Hangover">
+        <hangover>SD_HeavyHangover</hangover>
+        <minHangoverStage>3</minHangoverStage>
+      </li>
     </comps>
       <stages>
         <li>
@@ -122,7 +126,9 @@
           <statFactors>
             <RestFallRateFactor>0.9</RestFallRateFactor>
           </statFactors>
-          <socialFightChanceFactor>0.9</socialFightChanceFactor>
+          <statOffsets>
+            <SocialImpact>0.10</SocialImpact>
+           </statOffsets>
           <capMods>
 			      <li>
 			          <capacity>Moving</capacity>
@@ -138,7 +144,9 @@
           <statFactors>
             <RestFallRateFactor>0.8</RestFallRateFactor>
           </statFactors>
-          <socialFightChanceFactor>0.8</socialFightChanceFactor>
+          <statOffsets>
+            <SocialImpact>0.15</SocialImpact>
+           </statOffsets>
           <capMods>
 			      <li>
 			          <capacity>Moving</capacity>
@@ -153,7 +161,9 @@
           <statFactors>
             <RestFallRateFactor>0.7</RestFallRateFactor>
           </statFactors>
-          <socialFightChanceFactor>0.7</socialFightChanceFactor>
+          <statOffsets>
+            <SocialImpact>0.20</SocialImpact>
+           </statOffsets>
           <vomitMtbDays>0.25</vomitMtbDays>
           <tale>Drunk</tale>
 		  
@@ -171,7 +181,9 @@
           <statFactors>
             <RestFallRateFactor>0.6</RestFallRateFactor>
           </statFactors>
-          <socialFightChanceFactor>0.6</socialFightChanceFactor>
+          <statOffsets>
+            <SocialImpact>0.25</SocialImpact>
+           </statOffsets>
           <vomitMtbDays>0.40</vomitMtbDays>
             <capMods>
 			      <li>
@@ -201,55 +213,6 @@
           </hediffGivers>
         </li>
       </stages>
-  </HediffDef>
-
-  <HediffDef>
-    <defName>SWHangover</defName>
-    <label>hangover</label>
-    <labelNoun>a hangover</labelNoun>
-    <description>An unpleasant delayed after-effect of alcohol intoxication.</description>
-    <hediffClass>Hediff_Hangover</hediffClass>
-    <initialSeverity>1</initialSeverity>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0</minSeverity>
-        <label>slight</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.03</offset>
-            </li>
-          </capMods>
-      </li>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <label>strong</label>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.08</offset>
-            </li>
-          </capMods>
-      </li>
-      <!-- starts low because it isn't visible until alcohol hediff is gone-->
-      <li>
-        <minSeverity>0.40</minSeverity>
-        <label>pounding</label>
-        <vomitMtbDays>0.4</vomitMtbDays>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.18</offset>
-            </li>
-          </capMods>
-      </li>
-    </stages>
   </HediffDef>
   
   <ThoughtDef>
@@ -282,34 +245,6 @@
     </stages>
   </ThoughtDef>
 
-  <ThoughtDef>
-    <defName>SWHungover</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>Hangover</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>mild hangover</label>
-        <description>The headache is almost gone.</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>serious hangover</label>
-        <description>Too much sugar..</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-      <li>
-        <label>pounding hangover</label>
-        <description>It's like a bunch of dwarves are mining my brain..</description>
-        <baseMoodEffect>-12</baseMoodEffect>
-      </li>
-      <li>
-        <visible>false</visible>
-      </li>
-    </stages>
-  </ThoughtDef>
-  
   <!-- Alcohol addiction -->
   
   <ChemicalDef>

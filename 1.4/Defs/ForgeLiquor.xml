@@ -9,7 +9,7 @@
       <HediffDef>SD_ForgeHigh</HediffDef>
       <HediffDef>SD_ForgeTolerance</HediffDef>
       <HediffDef>SD_ForgeAddiction</HediffDef>
-      <HediffDef>Hangover</HediffDef>
+      <HediffDef>SD_HeavyHangover</HediffDef>
       <HediffDef>Burn</HediffDef>
     </descriptionHyperlinks>
     <possessionCount>3</possessionCount>
@@ -110,6 +110,10 @@
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="StonebornDelights.HediffCompProperties_Hangover">
+        <hangover>SD_HeavyHangover</hangover>
+        <minHangoverStage>3</minHangoverStage>
       </li>
     </comps>
       <stages>
