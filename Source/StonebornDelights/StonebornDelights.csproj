@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IngestionOutcomeDoer_RemoveHangover.cs" />
     <Compile Include="HediffComp_Hangover.cs" />
     <Compile Include="HediffComp_HiddenWith.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
