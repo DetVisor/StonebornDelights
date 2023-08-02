@@ -67,7 +67,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>SD_RawShatterbrew</defName>
         <label>raw shatterbrew</label>
-        <description>Allan, please add details.</description>
+        <description>An oversized alcoholic stew chock-full of meat, plant matter and stoutcap. It needs to be fermented for over a quadrum to be enjoyable, but when drank it functions as an entire buffet in a pot, which leaves you nicely fed, and quite tipsy. Stoneborn typically find pride in smashing the vessel after downing it's contents, hence the name, and shatterbrew drinking competitions are a common pastime in their fortresses. This specific urn isn't ready yet, and must be fermented more before being ingested.</description>
         <graphicData>
           <texPath>Things/Shatterbrew/Shatterbrew_fresh</texPath>
           <graphicClass>Graphic_Single</graphicClass>
@@ -101,7 +101,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_FermentedShatterbrew</defName>
         <label>fermented shatterbrew</label>
-        <description>Allan, please add details.</description>
+        <description>An oversized alcoholic stew chock-full of meat, plant matter and stoutcap. It needs to be fermented for over a quadrum to be enjoyable, but when drank it functions as an entire buffet in a pot, which leaves you nicely fed, and quite tipsy. Stoneborn typically find pride in smashing the vessel after downing it's contents, hence the name, and shatterbrew drinking competitions are a common pastime in their fortresses.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_ShatterbrewHigh</HediffDef>
           <HediffDef>SD_ShatterbrewAddiction</HediffDef>
@@ -150,7 +150,7 @@
         <comps>
           <li Class="CompProperties_Drug">
             <chemical>SD_ShatterChem</chemical>
-            <addictiveness>0.005</addictiveness>
+            <addictiveness>0</addictiveness>
             <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
             <needLevelOffset>0.9</needLevelOffset>
             <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
@@ -166,19 +166,61 @@
         <hediffClass>Hediff_High</hediffClass>
         <label>satiated by shatterbrew</label>
         <labelNoun>a shatterbrew satiation</labelNoun>
-        <description>Allan, please add details.</description>
-        <defaultLabelColor>(1,0,0.1)</defaultLabelColor>
+        <description>A stomach full of shatterbrew and a mind full of happy thoughts. Shatterbrew reduces appetite and fills the hunger meter, but the booze slows ya down quite a bit.</description>
+        <defaultLabelColor>(0.8,0.9,0.9)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
         <isBad>false</isBad>
         <comps>
           <li Class="HediffCompProperties_SeverityPerDay">
-            <severityPerDay>-1.5</severityPerDay>
+            <severityPerDay>-1.1</severityPerDay>
             <showHoursToRecover>true</showHoursToRecover>
+          </li>
+          <li Class="StonebornDelights.HediffCompProperties_Hangover">
+            <hangover>SD_LightHangover</hangover>
+            <minHangoverStage>2</minHangoverStage>
           </li>
         </comps>
           <stages>
             <li>
+              <label>fed</label>
+              <minSeverity>0.1</minSeverity>
+              <statFactors>
+                <MeleeDamageFactor>1.05</MeleeDamageFactor>
+              </statFactors>
+              <hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.5</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>-0.1</offset>
+                </li>
+              </capMods>
+            </li>
+            <li>
+              <label>full</label>
+              <minSeverity>0.4</minSeverity>
+              <statFactors>
+                <MeleeDamageFactor>1.1</MeleeDamageFactor>
+              </statFactors>
+              <hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.10</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>-0.2</offset>
+                </li>
+              </capMods>
+            </li>
+            <li>
+              <label>gorged</label>
+              <minSeverity>0.7</minSeverity>
               <statFactors>
                 <MeleeDamageFactor>1.2</MeleeDamageFactor>
               </statFactors>
@@ -206,7 +248,7 @@
         <stages>
           <li>
             <label>full and proud</label>
-            <description>God! I just downed all that! I feel amazing!</description>
+            <description>I downed it all, you wusses!</description>
             <baseMoodEffect>8</baseMoodEffect>
           </li>
         </stages>
@@ -290,8 +332,8 @@
             <visible>false</visible>
           </li>
           <li>
-            <label>rage elixir withdrawal</label>
-            <description>My thoughts are so muddled, I can barely feel emotions.. everything is so tame..</description>
+            <label>hungering for shatterbrew</label>
+            <description>I have a might hunger and nothing can fix it! Also, how are you seeing this?</description>
             <baseMoodEffect>-22</baseMoodEffect>
           </li>
         </stages>

@@ -282,8 +282,8 @@
   <parallelProcesses>false</parallelProcesses>
   <dropIngredients>false</dropIngredients>
   <showProductIcon>false</showProductIcon>
-  <barOffset>(0.0, 0.6)</barOffset>
-  <barScale>(1.2, 0.4)</barScale>
+  <barOffset>(0.0, 0.45)</barOffset>
+  <barScale>(0.3, 6)</barScale>
   <colorCoded>true</colorCoded>
   <processes>
     <li>SD_ShroomaleBrewing</li>
