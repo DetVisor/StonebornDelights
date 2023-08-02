@@ -45,6 +45,7 @@
     <Compile Include="HediffComp_Hangover.cs" />
     <Compile Include="HediffComp_HiddenWith.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SD_DefOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
