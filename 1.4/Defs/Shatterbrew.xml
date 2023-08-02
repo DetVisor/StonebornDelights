@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>SD_Make_RawShatterbrew</defName>
+        <label>make raw shatterbrew</label>
+        <description>Allan, please add details.</description>
+        <jobString>Making raw shatterbrew.</jobString>
+        <workAmount>2500</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>Brewery</li>
+        </recipeUsers>
+        <ingredients>
+          <li>
+            <filter>
+              <categories>
+                <li>MeatRaw</li>
+              </categories>
+            </filter>
+            <count>10</count>
+          </li>
+          <li>
+            <filter>
+              <categories>
+                <li>PlantFoodRaw</li>
+              </categories>
+            </filter>
+            <count>10</count>
+          </li>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>SD_RawStoutcap</li>
+              </thingDefs>
+            </filter>
+            <count>10</count>
+          </li>
+          <li>
+            <filter>
+                <categories>
+                  <li>StoneBlocks</li>
+                </categories>
+            </filter>
+            <count>5</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <categories>
+            <li>FoodRaw</li>
+            <li>StoneBlocks</li>
+          </categories>
+          <thingDefs>
+            <li>SD_RawStoutcap</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <workSkill>Cooking</workSkill>
+        <products>
+          <SD_RawShatterbrew>1</SD_RawShatterbrew>
+        </products>
+        <displayPriority>1430</displayPriority>
+      </RecipeDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SD_RawShatterbrew</defName>
+        <label>raw shatterbrew</label>
+        <description>Allan, please add details.</description>
+        <graphicData>
+          <texPath>Things/Shatterbrew/Shatterbrew_fresh</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <rotatable>false</rotatable>
+        <stackLimit>1</stackLimit>
+        <statBases>
+          <WorkToMake>2500</WorkToMake>
+          <MarketValue>100</MarketValue>
+          <Mass>10</Mass>
+          <Flammability>0</Flammability>
+          <MaxHitPoints>120</MaxHitPoints>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <techLevel>Industrial</techLevel>
+        <comps>
+		   <li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
+				<daysToRotStart>18</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+				<maturingString>SD_ShatterFermenting</maturingString>
+				<maturingProperly>SD_ShatterFermentingCorrectly</maturingProperly>
+				<maturingSlowly>SD_ShatterCurrentlyRefrigerated</maturingSlowly>
+				<maturingStopped>SD_ShatterCurrentlyFrozen</maturingStopped>
+				<thingToTransformTo>SD_FermentedShatterbrew</thingToTransformTo>
+		  </li>
+        </comps>
+      </ThingDef>
+
+    <ThingDef ParentName="DrugBase">
+        <defName>SD_FermentedShatterbrew</defName>
+        <label>fermented shatterbrew</label>
+        <description>Allan, please add details.</description>
+        <descriptionHyperlinks>
+          <HediffDef>SD_ShatterbrewHigh</HediffDef>
+          <HediffDef>SD_ShatterbrewAddiction</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+          <texPath>Things/Shatterbrew/Shatterbrew_ready</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.2</drawSize>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <stackLimit>1</stackLimit>
+        <statBases>
+          <WorkToMake>2500</WorkToMake>
+          <MarketValue>100</MarketValue>
+          <Mass>10</Mass>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+          <joyKind>Chemical</joyKind>
+          <joy>0.20</joy>
+          <drugCategory>Hard</drugCategory>
+          <foodType>Processed, Fluid</foodType>
+          <baseIngestTicks>1000</baseIngestTicks>
+          <ingestSound>Ingest_Drink</ingestSound>
+          <ingestHoldOffsetStanding>
+            <northDefault>
+              <offset>(0.18,0,0)</offset>
+            </northDefault>
+          </ingestHoldOffsetStanding>
+          <ingestCommandString>Gulp {0}</ingestCommandString>
+          <ingestReportString>Gulping {0}.</ingestReportString>
+          <useEatingSpeedStat>true</useEatingSpeedStat>
+          <chairSearchRadius>0</chairSearchRadius>
+          <outcomeDoers>
+            <li Class="IngestionOutcomeDoer_GiveHediff">
+              <hediffDef>SD_ShatterbrewHigh</hediffDef>
+              <severity>1.0</severity>
+              <toleranceChemical>SD_ShatterChem</toleranceChemical>
+            </li>
+            <li Class="IngestionOutcomeDoer_OffsetNeed">
+              <need>Food</need>
+              <offset>1</offset>
+            </li>
+          </outcomeDoers>
+          </ingestible>
+        <comps>
+          <li Class="CompProperties_Drug">
+            <chemical>SD_ShatterChem</chemical>
+            <addictiveness>0.005</addictiveness>
+            <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+            <needLevelOffset>0.9</needLevelOffset>
+            <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+            <listOrder>200</listOrder>
+            <overdoseSeverityOffset>0.02~0.15</overdoseSeverityOffset>
+            <largeOverdoseChance>0</largeOverdoseChance>
+          </li>
+        </comps>
+      </ThingDef>
+      
+      <HediffDef>
+        <defName>SD_ShatterbrewHigh</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>satiated by shatterbrew</label>
+        <labelNoun>a shatterbrew satiation</labelNoun>
+        <description>Allan, please add details.</description>
+        <defaultLabelColor>(1,0,0.1)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+          <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>-1.5</severityPerDay>
+            <showHoursToRecover>true</showHoursToRecover>
+          </li>
+        </comps>
+          <stages>
+            <li>
+              <statFactors>
+                <MeleeDamageFactor>1.2</MeleeDamageFactor>
+              </statFactors>
+              <hungerRateFactorOffset>-0.4</hungerRateFactorOffset>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.15</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>-0.3</offset>
+                </li>
+              </capMods>
+            </li>
+          </stages>
+      </HediffDef>
+      
+      <ThoughtDef>
+        <defName>SD_ShatterbrewHighThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>SD_ShatterbrewHigh</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+          <li>
+            <label>full and proud</label>
+            <description>God! I just downed all that! I feel amazing!</description>
+            <baseMoodEffect>8</baseMoodEffect>
+          </li>
+        </stages>
+      </ThoughtDef>
+
+      <ChemicalDef>
+        <defName>SD_ShatterChem</defName>
+        <label>shatterbrew</label>
+        <addictionHediff>SD_ShatterbrewAddiction</addictionHediff>
+        <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+        <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+      </ChemicalDef>
+      
+      <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>SD_Chemical_Shatterbrew</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>shatterbrew need</label>
+        <description>Allan, please add details.</description>
+        <fallPerDay>0.505</fallPerDay>
+        <listPriority>45</listPriority>
+      </NeedDef>
+    
+      <HediffDef ParentName="AddictionBase">
+        <defName>SD_ShatterbrewAddiction</defName>
+        <label>shatterbrew hunger</label>
+        <description>Allan, please add details.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <causesNeed>SD_Chemical_Shatterbrew</causesNeed>
+        <comps>
+          <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>-0.065</severityPerDay>
+            <showDaysToRecover>true</showDaysToRecover>
+          </li>
+        </comps>
+        <stages>
+          <li>
+          </li>
+          <li>
+            <label>withdrawal</label>
+            <painFactor>1</painFactor>
+            <hungerRateFactorOffset>0.6</hungerRateFactorOffset>
+            <statOffsets>
+              <RestFallRateFactor>0.3</RestFallRateFactor>
+            </statOffsets>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <offset>-0.20</offset>
+              </li>
+              <li>
+                <capacity>Moving</capacity>
+                <offset>-0.30</offset>
+              </li>
+              <li>
+                <capacity>Manipulation</capacity>
+                <offset>-0.10</offset>
+              </li>
+            </capMods>
+            <mentalStateGivers>
+              <li>
+                <mentalState>Binging_DrugExtreme</mentalState>
+                <mtbDays>40</mtbDays>
+              </li>
+              <li>
+                <mentalState>Binging_Food</mentalState>
+                <mtbDays>10</mtbDays>
+              </li>
+            </mentalStateGivers>
+          </li>
+        </stages>
+      </HediffDef>
+      
+      <ThoughtDef>
+        <defName>SD_ShatterbrewWithdrawalThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>SD_ShatterbrewAddiction</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+          <li>
+            <visible>false</visible>
+          </li>
+          <li>
+            <label>rage elixir withdrawal</label>
+            <description>My thoughts are so muddled, I can barely feel emotions.. everything is so tame..</description>
+            <baseMoodEffect>-22</baseMoodEffect>
+          </li>
+        </stages>
+      </ThoughtDef>
+    
+      <HediffDef ParentName="DrugToleranceBase">
+        <defName>SD_ShatterbrewTolerance</defName>
+        <label>shatterbrew tolerance</label>
+        <description>Allan, please add details.</description>
+        <comps>
+          <li Class="HediffCompProperties_SeverityPerDay">
+            <severityPerDay>-0.030</severityPerDay>
+          </li>
+          <li Class="HediffCompProperties_DrugEffectFactor">
+            <chemical>SD_ShatterChem</chemical>
+          </li>
+        </comps>
+        <hediffGivers>
+          <li Class="HediffGiver_RandomDrugEffect">
+            <hediff>ChemicalDamageModerate</hediff>
+            <severityToMtbDaysCurve>
+              <points>
+                <li>(0.45, 99999)</li>
+                <li>(0.5, 120)</li>
+                <li>(1, 90)</li>
+              </points>
+            </severityToMtbDaysCurve>
+            <partsToAffect>
+              <li>Stomach</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </HediffDef>
+
+    </Defs>
