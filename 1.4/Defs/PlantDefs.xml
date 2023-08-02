@@ -110,7 +110,7 @@
       </sowResearchPrerequisites>
       <topWindExposure>0</topWindExposure>
       <growDays>10.5</growDays>
-      <cavePlantWeight>10</cavePlantWeight>
+      <cavePlantWeight>2</cavePlantWeight>
       <visualSizeRange>0.4~0.95</visualSizeRange>
       <humanFoodPlant>true</humanFoodPlant>
       <maxMeshCount>4</maxMeshCount>
@@ -181,7 +181,7 @@
       </sowResearchPrerequisites>
       <topWindExposure>0</topWindExposure>
       <growDays>14</growDays>
-      <cavePlantWeight>5</cavePlantWeight>
+      <cavePlantWeight>2</cavePlantWeight>
       <visualSizeRange>0.3~0.66</visualSizeRange>
       <humanFoodPlant>true</humanFoodPlant>
       <maxMeshCount>4</maxMeshCount>

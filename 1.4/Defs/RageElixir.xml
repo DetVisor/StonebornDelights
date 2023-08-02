@@ -39,7 +39,7 @@
           <outcomeDoers>
             <li Class="IngestionOutcomeDoer_GiveHediff">
               <hediffDef>SD_ElixirHigh</hediffDef>
-              <severity>1.0</severity>
+              <severity>0.20</severity>
               <toleranceChemical>SD_Elixir</toleranceChemical>
             </li>
             <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -78,19 +78,104 @@
             <severityPerDay>-1.5</severityPerDay>
             <showHoursToRecover>true</showHoursToRecover>
           </li>
+          <li Class="StonebornDelights.HediffCompProperties_Hangover">
+            <hangover>SD_LightHangover</hangover>
+            <minHangoverStage>3</minHangoverStage>
+          </li>
         </comps>
           <stages>
             <li>
+              <label>annoyed</label>
+              <minSeverity>0.1</minSeverity>
+              <vomitMtbDays>2</vomitMtbDays>
+              <painOffset>-0.2</painOffset>
+              <naturalHealingFactor>1.1</naturalHealingFactor>
+              <totalBleedFactor>0.95</totalBleedFactor>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.05</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>0.05</offset>
+                </li>
+              </capMods>
+              <mentalStateGivers>
+                <li>
+                  <mentalState>Berserk</mentalState>
+                  <mtbDays>20</mtbDays>
+                </li>
+              </mentalStateGivers>
+            </li>
+            <li>
+              <label>irate</label>
+              <minSeverity>0.3</minSeverity>
+              <vomitMtbDays>0.75</vomitMtbDays>
               <statFactors>
-                <MeleeDamageFactor>1.1</MeleeDamageFactor>
+                <MeleeDamageFactor>1.05</MeleeDamageFactor>
               </statFactors>
               <painOffset>-0.3</painOffset>
-              <naturalHealingFactor>1.2</naturalHealingFactor>
-              <totalBleedFactor>0.9</totalBleedFactor>
+              <naturalHealingFactor>1.15</naturalHealingFactor>
+              <totalBleedFactor>0.90</totalBleedFactor>
               <capMods>
                 <li>
                   <capacity>Consciousness</capacity>
                   <offset>0.10</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>0.08</offset>
+                </li>
+              </capMods>
+              <mentalStateGivers>
+                <li>
+                  <mentalState>Berserk</mentalState>
+                  <mtbDays>15</mtbDays>
+                </li>
+              </mentalStateGivers>
+            </li>
+            <li>
+              <label>dangerous</label>
+              <minSeverity>0.6</minSeverity>
+              <vomitMtbDays>0.35</vomitMtbDays>
+              <statFactors>
+                <MeleeDamageFactor>1.1</MeleeDamageFactor>
+              </statFactors>
+              <painOffset>-0.4</painOffset>
+              <naturalHealingFactor>1.2</naturalHealingFactor>
+              <totalBleedFactor>0.80</totalBleedFactor>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.15</offset>
+                </li>
+                <li>
+                  <capacity>Moving</capacity>
+                  <offset>0.12</offset>
+                </li>
+              </capMods>
+              <mentalStateGivers>
+                <li>
+                  <mentalState>Berserk</mentalState>
+                  <mtbDays>10</mtbDays>
+                </li>
+              </mentalStateGivers>
+            </li>
+            <li>
+              <label>berserk</label>
+              <minSeverity>0.8</minSeverity>
+              <vomitMtbDays>0.2</vomitMtbDays>
+              <statFactors>
+                <MeleeDamageFactor>1.2</MeleeDamageFactor>
+              </statFactors>
+              <painOffset>-0.5</painOffset>
+              <naturalHealingFactor>1.2</naturalHealingFactor>
+              <totalBleedFactor>0.80</totalBleedFactor>
+              <capMods>
+                <li>
+                  <capacity>Consciousness</capacity>
+                  <offset>0.20</offset>
                 </li>
                 <li>
                   <capacity>Moving</capacity>
@@ -114,9 +199,9 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
           <li>
-            <label>high on elixir</label>
-            <description>All I see is red.</description>
-            <baseMoodEffect>5</baseMoodEffect>
+            <label>seein' red</label>
+            <description>I feel like I could snap soon..</description>
+            <baseMoodEffect>8</baseMoodEffect>
           </li>
         </stages>
       </ThoughtDef>
@@ -201,8 +286,8 @@
           </li>
           <li>
             <label>rage elixir withdrawal</label>
-            <description>My thoughts are so muddled, I can barely feel emotions.. everything is so tame..</description>
-            <baseMoodEffect>-22</baseMoodEffect>
+            <description>I feel so kind, too kind! It's like I can't be angry anymore.</description>
+            <baseMoodEffect>-20</baseMoodEffect>
           </li>
         </stages>
       </ThoughtDef>
