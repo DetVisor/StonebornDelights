@@ -80,10 +80,10 @@
         </products>
       </RecipeDef>
 
-    <ThingDef ParentName="MakeableDrugBase">
+    <ThingDef ParentName="DrugBase">
         <defName>SD_Glimmerquartz</defName>
         <label>glimmerquartz</label>
-        <description>A chemical mix concocted by stoneborn chemists that fills the mind with images of anger and death, turning even the most peaceful people into raging maniacs that faun at the idea of murdering everyone around them.\n\The elixir has unique numbing properties that disconnect a large majority of pain receptors, allowing the users to stay in the battle longer, this and the decent healing effects of the solution create the perfect cocktail for melee warriors and berserkers alike.</description>
+        <description>Allan, please add details.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_GlimmerHigh</HediffDef>
           <HediffDef>SD_GlimmerAddiction</HediffDef>
@@ -94,7 +94,6 @@
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
-          <WorkToMake>2000</WorkToMake>
           <MarketValue>36</MarketValue>
           <Mass>0.1</Mass>
         </statBases>
@@ -131,16 +130,6 @@
             </li>
           </outcomeDoers>
           </ingestible>
-          <recipeMaker>
-          <recipeUsers>
-            <li>DrugLab</li>
-          </recipeUsers>
-          <soundWorking>Recipe_Drug</soundWorking>
-          </recipeMaker>
-        <costList>
-          <Neutroamine>4</Neutroamine>
-          <Yayo>2</Yayo>
-        </costList>
         <comps>
           <li Class="CompProperties_Drug">
             <chemical>SD_Glimmer</chemical>

@@ -20,6 +20,7 @@
              <li>SD_ShroomHigh</li>
              <li>SD_ForgeHigh</li>
              <li>SD_ShatterbrewHigh</li>
+             <li>SD_ElixirHigh</li>
             </hiderHediffs>
           </li>
         </comps>
@@ -106,6 +107,7 @@
              <li>SD_ShroomHigh</li>
              <li>SD_ForgeHigh</li>
              <li>SD_ShatterbrewHigh</li>
+             <li>SD_ElixirHigh</li>
             </hiderHediffs>
           </li>
         </comps>
