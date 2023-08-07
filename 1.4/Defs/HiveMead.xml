@@ -194,7 +194,7 @@
       </li>
       <li>
         <label>quite inebriated</label>
-        <description>I'm feeling it, I'm feeling the booze!</description>
+        <description>I feel very pleasant. And quite relaxed as well...</description>
         <baseMoodEffect>16</baseMoodEffect>
       </li>     
       <li>
@@ -282,8 +282,8 @@
   <HediffDef ParentName="AddictionBase">
     <defName>SD_HiveAddiction</defName>
     <label>hive mead addiction</label>
-    <description>A chemical addiction to ale. Long-term presence of ale has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of ale, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <description>A chemical addiction to hivemead. Long-term presence of hivemead has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of hivemead, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
     <causesNeed>SD_Chemical_Ale</causesNeed>
     <comps>
@@ -333,8 +333,8 @@
         <visible>false</visible>
       </li>
       <li>
-        <label>ale withdrawal</label>
-        <description>Feeling shaky. Everything pisses me off. I keep thinking of drinking.. and guns.</description>
+        <label>hivemead withdrawal</label>
+        <description>That sweetness... that smooth mouthfeel... I NEED IT!</description>
         <baseMoodEffect>-35</baseMoodEffect>
       </li>
     </stages>
