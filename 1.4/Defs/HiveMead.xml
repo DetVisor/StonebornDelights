@@ -4,7 +4,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_HiveMead</defName>
         <label>hive mead</label>
-        <description>A boozy yet sweet drink brewed in the depths of caveworlds. The high glucose content of insect jelly makes for a wonderfully saccharine and pleasant mead which goes down with ease. Although ome folk say it makes them sleepier, it's probably just the alcohol getting to their head.</description>
+        <description>A boozy yet sweet drink brewed in the depths of caveworlds. The high glucose content of insect jelly makes for a wonderfully saccharine and pleasant mead which goes down with ease. Although some folk say it makes them more tired, one could attribute that more to the alcohol content and smooth texture of the mead more than anything else.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_HiveHigh</HediffDef>
           <HediffDef>SD_HiveTolerance</HediffDef>
