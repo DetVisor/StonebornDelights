@@ -4,7 +4,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>SD_ForgeLiquor</defName>
     <label>forge liquor</label>
-    <description>A A firey alcohol with a strong flavor and burning aftertaste, favored by stoneborn artisans. The drink is highly sought after, not only for its arduous fermenting process and uncommon ingredients, but also for its unusual ability to empower the creative passions of anyone who drinks it. Caution must be taken to not drink too much forge liquor, as it inflames emotions to an almost volatile degree at a high enough dosage.</description>
+    <description>A firey alcohol with a strong flavor and burning aftertaste, favored by stoneborn artisans. The drink is highly sought after, not only for its arduous fermenting process and uncommon ingredients, but also for its unusual ability to empower the creative passions of anyone who drinks it. Caution must be taken to not drink too much forge liquor, as it inflames emotions to an almost volatile degree at a high enough dosage.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_ForgeHigh</HediffDef>
       <HediffDef>SD_ForgeTolerance</HediffDef>
