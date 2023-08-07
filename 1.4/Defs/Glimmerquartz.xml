@@ -83,7 +83,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_Glimmerquartz</defName>
         <label>glimmerquartz</label>
-        <description>A small crystal of glimmerquartz, cut from a chunk to a more edible size. The chemical makeup of glimmerquartz makes it a highly potent stimulant that gives anyone who consumes it an feeling of euphoria and an overabundance of energy, so much so that the person would much prefer to run around and burn that energy rather than sit and do work. It is also a very pleasant sweetener, making it useful for certain stoneborn recipes.</description>
+        <description>A small crystal of glimmerquartz, cut from a chunk to a more edible size. The chemical makeup of glimmerquartz makes it a highly potent stimulant that gives anyone who consumes it an feeling of euphoria and an overabundance of energy, so much so that the person would much prefer to run around and burn said energy rather than sit and do work. It is also a very pleasant sweetener, making it useful for certain stoneborn recipes. Entire stoneborn mining operations are dedicated to extracting these sugary crystals for consumption and processing.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_GlimmerHigh</HediffDef>
           <HediffDef>SD_GlimmerAddiction</HediffDef>
