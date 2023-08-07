@@ -4,7 +4,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>SD_Fey</defName>
         <label>fey</label>
-        <description>A rare and elusive creature that is oddly attracted to the brewing process. Most tend to think it's some spirit or manifestation of nature itself, or some mystical being from another world. The fey have quite the reputation with the Stoneborn as well, though for an entirely different reason. They tear off the wings of fey to roll them into quite the potent blunt.</description>
+        <description>A rare and elusive creature that is oddly attracted to the brewing process of sweetwine. Most tend to think it's some spirit or manifestation of nature itself, or some mystical being from another world. The fey have quite the reputation with the Stoneborn as well, though for an entirely different reason. They tear off the wings of fey to roll them into quite the potent blunt.</description>
         <statBases>
           <MoveSpeed>5</MoveSpeed>
           <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
