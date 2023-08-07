@@ -4,7 +4,7 @@
     <RecipeDef>
         <defName>SD_Make_RawShatterbrew</defName>
         <label>make raw shatterbrew</label>
-        <description>Allan, please add details.</description>
+        <description>Mix stoutcap, vegetables, and meat into a very large pot of alcoholic stew.</description>
         <jobString>Making raw shatterbrew.</jobString>
         <workAmount>2500</workAmount>
         <workSpeedStat>CookSpeed</workSpeedStat>
@@ -166,7 +166,7 @@
         <hediffClass>Hediff_High</hediffClass>
         <label>satiated by shatterbrew</label>
         <labelNoun>a shatterbrew satiation</labelNoun>
-        <description>A stomach full of shatterbrew and a mind full of happy thoughts. Shatterbrew reduces appetite and fills the hunger meter, but the booze slows ya down quite a bit.</description>
+        <description>A stomach full of shatterbrew and a mind full of happy thoughts. Shatterbrew reduces appetite and fills the hunger meter, but the booze slows the imbiber down quite a bit. This pot is ready for consumption, perfect for a shatterbrew drinking competition, or perhaps just an intrepid stoneborn looking to show off.</description>
         <defaultLabelColor>(0.8,0.9,0.9)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
@@ -266,7 +266,7 @@
         <defName>SD_Chemical_Shatterbrew</defName>
         <needClass>Need_Chemical</needClass>
         <label>shatterbrew need</label>
-        <description>Allan, please add details.</description>
+        <description>Addiction to consuming shatterbrew</description>
         <fallPerDay>0.505</fallPerDay>
         <listPriority>45</listPriority>
       </NeedDef>
@@ -274,7 +274,7 @@
       <HediffDef ParentName="AddictionBase">
         <defName>SD_ShatterbrewAddiction</defName>
         <label>shatterbrew hunger</label>
-        <description>Allan, please add details.</description>
+        <description>An addiction to consuming shatterbrew, either from the miniscule alcohol content or a very misplaced sense of pride. The desire to consume shatterbrew is so powerful that the brain has developed a dependance on consuming copious amounts of stew. However, this addiction can be curbed after a period of not consuming shatterbrew. Make sure to keep a shatterbrew addict out of the larder in the meantime.</description>
         <hediffClass>Hediff_Addiction</hediffClass>
         <causesNeed>SD_Chemical_Shatterbrew</causesNeed>
         <comps>
@@ -333,7 +333,7 @@
           </li>
           <li>
             <label>hungering for shatterbrew</label>
-            <description>I have a might hunger and nothing can fix it! Also, how are you seeing this?</description>
+            <description>I have a might hunger and nothing can fix it!</description>
             <baseMoodEffect>-22</baseMoodEffect>
           </li>
         </stages>
@@ -342,7 +342,7 @@
       <HediffDef ParentName="DrugToleranceBase">
         <defName>SD_ShatterbrewTolerance</defName>
         <label>shatterbrew tolerance</label>
-        <description>Allan, please add details.</description>
+        <description>A tolerance to consuming shatterbrew. Due to repeat use, the stomach expands so much that downing a giant jug full of stew leaves less of a mark on the consumer. This is great for winning a shatterbrew contest, but not so ideal for benefiting from the effects of shatterbrew.</description>
         <comps>
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.030</severityPerDay>

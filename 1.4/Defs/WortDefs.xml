@@ -41,7 +41,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SD_ElixirMush</defName>
     <label>elixir mush</label>
-    <description>Un-fermented beer. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
+    <description>Un-fermented elixir, with a very pungent odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
     <graphicData>
       <texPath>Things/ElixirMush</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -86,7 +86,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SD_LiquorSmush</defName>
     <label>liquor smush</label>
-    <description>Un-fermented beer. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
+    <description>Un-fermented liquor, with a strong and spicy odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
     <graphicData>
       <texPath>Things/LiquorSmush</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -184,7 +184,7 @@
   <RecipeDef>
     <defName>SD_MakeElixirMush</defName>
     <label>make elixir mush</label>
-    <description>Make elixir smush from bladeroota and bull's horns..</description>
+    <description>Make elixir smush from bladeroot and bull's horns..</description>
     <jobString>Making elixir mush.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>

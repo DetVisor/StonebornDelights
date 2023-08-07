@@ -4,7 +4,7 @@
 <ThingDef ParentName="OrganicProductBase">
     <defName>SD_Feywing</defName>
     <label>feywing</label>
-    <description>Raw cut leaves of a smokeleaf plant. Can be rolled into smokeable joints at a crafting spot.</description>
+    <description>The torn off wings of a fey. Somehow, some intrepid dwarf thought to roll and smoke these like a joint, and now it has become a sought after drug due to its uniquely potent high.</description>
     <graphicData>
       <texPath>Things/Feywing</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -40,7 +40,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>SD_FeywingJoint</defName>
     <label>feywing joint</label>
-    <description>Bladeroot leaves rolled up into tight cigars. Despite its delterious appearace, many prominent stoneborn athletes dope themselves up with a few long draws to improve their kinesthetic capabilities.\n\It is a common sight to see stoneborn aegisbreakers puffing on a bladeroot cigar while wildly swinging their warhammers through enemy lines.</description>
+    <description>Fey wings rolled up into a joint. Perhaps due to the unique properties of both the fey and the sweetwine it is so attracted to, this joint imparts a powerful high that seems to enhance the abilities of anyone who ingests it, while leaving the person with a feeling of deep serenity. Such joints are very rare to come across due to the nature of their production, so care must be taken that an addiction is not formed.</description>
     <possessionCount>5</possessionCount>
     <descriptionHyperlinks>
       <HediffDef>SD_FeywingHigh</HediffDef>
@@ -136,7 +136,7 @@
     <defName>SD_FeywingHigh</defName>
     <label>high on feywing</label>
     <labelNoun>a feywing high</labelNoun>
-    <description>Feywing's active chemical in the bloodstream. Generates violent thoughts, and a strange itch for smashing things.</description>
+    <description>Feywing's active chemical in the bloodstream. Enhances a pawn's overall capabilities, while dulling certain parts of the brain responsible for aggression and psychic connection.</description>
     <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -177,7 +177,7 @@
     <stages>
       <li>
         <label>mellow</label>
-        <description>I feel like I'm floating.. I'm so mellow.</description>
+        <description>I feel like I'm floating. I'm so mellow.</description>
         <baseMoodEffect>30</baseMoodEffect>
       </li>
     </stages>
@@ -206,7 +206,7 @@
   <HediffDef ParentName="DrugToleranceBase">
     <defName>SD_FeywingTolerance</defName>
     <label>feywing tolerance</label>
-    <description>A built-up tolerance to bladeroot. The more severe this tolerance is, the more bladeroot it takes to get the same effect.</description>
+    <description>A built-up tolerance to feywing. The more severe this tolerance is, the more feywing it takes to get the same effect.</description>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.011</severityPerDay>
@@ -250,8 +250,8 @@
   <HediffDef ParentName="AddictionBase">
     <defName>SD_FeywingAddiction</defName>
     <label>feywing dependence</label>
-    <description>A chemical addiction to smokeleaf. Long-term use of smokeleaf has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of smokeleaf, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <description>A chemical addiction to feywing. Long-term use of feywing has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of feywing, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
     <causesNeed>SD_Chemical_Feywing</causesNeed>
     <comps>

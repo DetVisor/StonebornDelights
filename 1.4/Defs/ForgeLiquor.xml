@@ -4,7 +4,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>SD_ForgeLiquor</defName>
     <label>forge liquor</label>
-    <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
+    <description>A firey alcohol with a strong flavor and burning aftertaste, favored by stoneborn artisans. The drink is highly sought after, not only for its arduous fermenting process and uncommon ingredients, but also for its unusual ability to empower the creative passions of anyone who drinks it. Caution must be taken to not drink too much forge liquor, as it inflames emotions to an almost volatile degree at a high enough dosage.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_ForgeHigh</HediffDef>
       <HediffDef>SD_ForgeTolerance</HediffDef>
@@ -97,7 +97,7 @@
     <defName>SD_ForgeHigh</defName>
     <label>forge liquor high</label>
     <labelNoun>drunkenness</labelNoun>
-    <description>Forge liquor is in the blood stream, it makes people focused, and crafting speed.</description>
+    <description>Forge liquor is in the blood stream. It makes people focused on their craft, but also makes them more prone to social fighting than normal alcohol.</description>
     <hediffClass>Hediff_Alcohol</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -317,7 +317,7 @@
   <HediffDef ParentName="DrugToleranceBase">
     <defName>SD_ForgeTolerance</defName>
     <label>forge liquor tolerance</label>
-    <description>A built-up tolerance to forge liquor. The more severe this tolerance is, the more ale it takes to get the same effect.</description>
+    <description>A built-up tolerance to forge liquor. The more severe this tolerance is, the more liquor it takes to get the same effect.</description>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.016</severityPerDay>
