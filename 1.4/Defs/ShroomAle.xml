@@ -45,7 +45,7 @@
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SD_ShroomHigh</hediffDef>
           <severity>0.15</severity>
-          <toleranceChemical>SD_Ale</toleranceChemical>
+          <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SD_AleTolerance</hediffDef>

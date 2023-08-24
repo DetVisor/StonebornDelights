@@ -45,7 +45,7 @@
             <li Class="IngestionOutcomeDoer_OffsetNeed">
               <need>Food</need>
               <offset>0.4</offset>
-              <toleranceChemical>SD_Elixir</toleranceChemical>
+              <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
             </li>
           </outcomeDoers>
           </ingestible>

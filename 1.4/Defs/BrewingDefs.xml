@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ChemicalDef>
+    <defName>SD_DwarvenDrink</defName>
+    <label>dwarven brews</label>
+    <addictionHediff>SD_DwarvenBrewAddiction</addictionHediff>
+    <toleranceHediff>SD_DwarvenBrewTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.22</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedEvents>
+      <li>
+        <hediff>Cirrhosis</hediff>
+        <chance>0.25</chance>
+        <partsToAffect>
+          <li>Liver</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+  </ChemicalDef>
+
 <ProcessorFramework.ProcessDef>
   <defName>SD_ShroomaleBrewing</defName>
   <thingDef>SD_ShroomAle</thingDef>
