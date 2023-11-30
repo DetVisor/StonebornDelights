@@ -7,7 +7,9 @@
         <description>A chemical mix concocted by stoneborn chemists that fills the mind with images of anger and death, turning even the most peaceful people into raging maniacs that faun at the idea of murdering everyone around them.\n\The elixir has unique numbing properties that disconnect a large majority of pain receptors, allowing the users to stay in the battle longer, this and the decent healing effects of the solution create the perfect cocktail for melee warriors and berserkers alike.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_ElixirHigh</HediffDef>
-          <HediffDef>SD_ElixirAddiction</HediffDef>
+          <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
+          <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
+          <HediffDef>SD_HeavyHangover</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
           <texPath>Things/RageElixir</texPath>
@@ -40,7 +42,7 @@
             <li Class="IngestionOutcomeDoer_GiveHediff">
               <hediffDef>SD_ElixirHigh</hediffDef>
               <severity>0.20</severity>
-              <toleranceChemical>SD_Elixir</toleranceChemical>
+              <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
             </li>
             <li Class="IngestionOutcomeDoer_OffsetNeed">
               <need>Food</need>
@@ -51,10 +53,10 @@
           </ingestible>
         <comps>
           <li Class="CompProperties_Drug">
-            <chemical>SD_Elixir</chemical>
+            <chemical>SD_DwarvenDrink</chemical>
             <addictiveness>0.016</addictiveness>
-            <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-            <needLevelOffset>0.9</needLevelOffset>
+            <existingAddictionSeverityOffset>0.32</existingAddictionSeverityOffset>
+            <needLevelOffset>0.8</needLevelOffset>
             <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
             <listOrder>200</listOrder>
             <overdoseSeverityOffset>0.09~0.35</overdoseSeverityOffset>
@@ -79,7 +81,7 @@
             <showHoursToRecover>true</showHoursToRecover>
           </li>
           <li Class="StonebornDelights.HediffCompProperties_Hangover">
-            <hangover>SD_LightHangover</hangover>
+            <hangover>SD_HeavyHangover</hangover>
             <minHangoverStage>3</minHangoverStage>
           </li>
         </comps>
@@ -206,6 +208,8 @@
         </stages>
       </ThoughtDef>
 
+    <!--
+
       <ChemicalDef>
         <defName>SD_Elixir</defName>
         <label>rage elixir</label>
@@ -320,5 +324,7 @@
           </li>
         </hediffGivers>
       </HediffDef>
+
+    -->
 
     </Defs>

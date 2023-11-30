@@ -104,7 +104,7 @@
         <description>An oversized alcoholic stew chock-full of meat, plant matter and stoutcap. It needs to be fermented for over a quadrum to be enjoyable, but when drank it functions as an entire buffet in a pot, which leaves you nicely fed, and quite tipsy. Stoneborn typically find pride in smashing the vessel after downing it's contents, hence the name, and shatterbrew drinking competitions are a common pastime in their fortresses.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_ShatterbrewHigh</HediffDef>
-          <HediffDef>SD_ShatterbrewAddiction</HediffDef>
+          <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
           <texPath>Things/Shatterbrew/Shatterbrew_ready</texPath>
@@ -139,7 +139,7 @@
             <li Class="IngestionOutcomeDoer_GiveHediff">
               <hediffDef>SD_ShatterbrewHigh</hediffDef>
               <severity>1.0</severity>
-              <toleranceChemical>SD_ShatterChem</toleranceChemical>
+              <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
             </li>
             <li Class="IngestionOutcomeDoer_OffsetNeed">
               <need>Food</need>
@@ -149,7 +149,7 @@
           </ingestible>
         <comps>
           <li Class="CompProperties_Drug">
-            <chemical>SD_ShatterChem</chemical>
+            <chemical>SD_DwarvenDrink</chemical>
             <addictiveness>0</addictiveness>
             <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
             <needLevelOffset>0.9</needLevelOffset>
@@ -166,7 +166,7 @@
         <hediffClass>Hediff_High</hediffClass>
         <label>satiated by shatterbrew</label>
         <labelNoun>a shatterbrew satiation</labelNoun>
-        <description>A stomach full of shatterbrew and a mind full of happy thoughts. Shatterbrew reduces appetite and fills the hunger meter, but the booze slows the imbiber down quite a bit. This pot is ready for consumption, perfect for a shatterbrew drinking competition, or perhaps just an intrepid stoneborn looking to show off.</description>
+        <description>A stomach full of shatterbrew and a mind full of happy thoughts. Shatterbrew reduces appetite and fills the hunger meter, but the booze slows the imbiber down quite a bit.</description>
         <defaultLabelColor>(0.8,0.9,0.9)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
@@ -253,7 +253,7 @@
           </li>
         </stages>
       </ThoughtDef>
-
+<!--
       <ChemicalDef>
         <defName>SD_ShatterChem</defName>
         <label>shatterbrew</label>
@@ -367,5 +367,5 @@
           </li>
         </hediffGivers>
       </HediffDef>
-
+    -->
     </Defs>

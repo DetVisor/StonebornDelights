@@ -7,7 +7,8 @@
     <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_SWHigh</HediffDef>
-      <HediffDef>SD_SWTolerance</HediffDef>
+      <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
+      <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
       <HediffDef>SD_LightHangover</HediffDef>
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
@@ -47,7 +48,7 @@
           <toleranceChemical>SD_Glimmer</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SD_SWTolerance</hediffDef>
+          <hediffDef>SD_DwarvenBrewTolerance</hediffDef>
           <severity>0.016</severity>
           <divideByBodySize>true</divideByBodySize>
         </li>
@@ -246,7 +247,7 @@
   </ThoughtDef>
 
   <!-- Alcohol addiction -->
-  
+  <!--
   <ChemicalDef>
     <defName>SD_SW</defName>
     <label>sweetwine</label>
@@ -377,5 +378,5 @@
       </li>
     </stages>
   </ThoughtDef>
-
+-->
 </Defs>

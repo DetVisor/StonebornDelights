@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Generic Chemical Def -->
+
   <ChemicalDef>
     <defName>SD_DwarvenDrink</defName>
     <label>dwarven brews</label>
     <addictionHediff>SD_DwarvenBrewAddiction</addictionHediff>
     <toleranceHediff>SD_DwarvenBrewTolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.22</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedToleranceChance>0.11</onGeneratedAddictedToleranceChance>
     <onGeneratedAddictedEvents>
       <li>
         <hediff>Cirrhosis</hediff>
@@ -17,6 +19,88 @@
       </li>
     </onGeneratedAddictedEvents>
   </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>SD_Chemical_DwarvenDrink</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>dwarven brews</label>
+    <description>Because of an forge liquor addiction, this person needs to regularly consume it to avoid withdrawal symptoms.</description>
+    <listPriority>35</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>SD_DwarvenBrewTolerance</defName>
+    <label>dwarven brew tolerance</label>
+    <description>A built-up tolerance to all dwarven alcohols. The more severe this tolerance is, the more it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.016</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>SD_DwarvenDrink</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>SD_DwarvenBrewAddiction</defName>
+    <label>dwarven brew addiction</label>
+    <description>A chemical addiction to various dwarven brews. Their long-term presence has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>SD_Chemical_DwarvenDrink</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0245</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <socialFightChanceFactor>2.2</socialFightChanceFactor>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.6</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>SD_DwarvenBrewWithdrawalThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SD_DwarvenBrewAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>missing the kick</label>
+        <description>There's just nothing quite like a good ol' drink of ale.. I don't feel like doing anythin'..</description>
+        <baseMoodEffect>-32</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- Process Defs -->
 
 <ProcessorFramework.ProcessDef>
   <defName>SD_ShroomaleBrewing</defName>

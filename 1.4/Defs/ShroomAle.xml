@@ -7,8 +7,8 @@
     <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_ShroomHigh</HediffDef>
-      <HediffDef>SD_AleTolerance</HediffDef>
-      <HediffDef>SD_AleAddiction</HediffDef>
+      <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
+      <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
       <HediffDef>SD_LightHangover</HediffDef>
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
@@ -48,7 +48,7 @@
           <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SD_AleTolerance</hediffDef>
+          <hediffDef>SD_DwarvenBrewTolerance</hediffDef>
           <severity>0.016</severity>
           <divideByBodySize>true</divideByBodySize>
         </li>
@@ -58,11 +58,11 @@
     <techLevel>Neolithic</techLevel>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>SD_Ale</chemical>
+        <chemical>SD_DwarvenDrink</chemical>
         <addictiveness>0.012</addictiveness>
         <minToleranceToAddict>0.23</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.22</existingAddictionSeverityOffset>
-        <needLevelOffset>0.9</needLevelOffset>
+        <needLevelOffset>0.6</needLevelOffset>
         <listOrder>10</listOrder>
       </li>
       <li>
@@ -106,7 +106,7 @@
     <comps>
       <li Class="HediffCompProperties_Effecter">
         <stateEffecter>AleDrunk</stateEffecter>
-        <severityIndices>2~5</severityIndices>
+        <severityIndices>3~5</severityIndices>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
@@ -266,7 +266,7 @@
   </ThoughtDef>
   
   <!-- Alcohol addiction -->
-  
+<!--
   <ChemicalDef>
     <defName>SD_Ale</defName>
     <label>ale</label>
@@ -283,7 +283,7 @@
       </li>
     </onGeneratedAddictedEvents>
   </ChemicalDef>
-  
+
   <NeedDef ParentName="DrugAddictionNeedBase">
     <defName>SD_Chemical_Ale</defName>
     <needClass>Need_Chemical</needClass>
@@ -394,5 +394,5 @@
       </li>
     </stages>
   </ThoughtDef>
-
+-->
 </Defs>

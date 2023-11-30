@@ -7,8 +7,8 @@
         <description>A green and gold powder often used by stoneborn who make a living in the quarries. While inhaling a concoction of powdered minerals and plant leaves may seem ill advised, those who do enter a state of higher mental fortitude: useful in a high-risk environment like a deep-shaft mine.\n\That levelheadedness lets miners focus on the rocks they pick at, allowing them to notice minute veins of ore they might have otherwise ignored as dross.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_MDHigh</HediffDef>
-          <HediffDef>SD_MineralTolerance</HediffDef>
-          <HediffDef>SD_MineralAddiction</HediffDef>
+          <HediffDef>PsychiteTolerance</HediffDef>
+          <HediffDef>PsychiteAddiction</HediffDef>
           <HediffDef>ChemicalDamageSevere</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
@@ -44,15 +44,15 @@
             <li Class="IngestionOutcomeDoer_GiveHediff">
               <hediffDef>SD_MDHigh</hediffDef>
               <severity>0.75</severity>
-              <toleranceChemical>SD_Mineral</toleranceChemical>
+              <toleranceChemical>Psychite</toleranceChemical>
             </li>
             <li Class="IngestionOutcomeDoer_OffsetNeed">
               <need>Food</need>
               <offset>0.4</offset>
-              <toleranceChemical>SD_Mineral</toleranceChemical>
+              <toleranceChemical>Psychite</toleranceChemical>
             </li>
             <li Class="IngestionOutcomeDoer_GiveHediff">
-              <hediffDef>SD_MineralTolerance</hediffDef>
+              <hediffDef>PsychiteTolerance</hediffDef>
               <severity>0.040</severity>
               <divideByBodySize>true</divideByBodySize>
               <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
@@ -73,7 +73,7 @@
         </costList>
         <comps>
           <li Class="CompProperties_Drug">
-            <chemical>SD_Mineral</chemical>
+            <chemical>Psychite</chemical>
             <addictiveness>0.05</addictiveness>
             <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
             <needLevelOffset>0.9</needLevelOffset>
@@ -135,6 +135,7 @@
       
       <!-- Mineral addiction -->
       
+    <!--
       <ChemicalDef>
         <defName>SD_Mineral</defName>
         <label>mineral</label>
@@ -260,5 +261,5 @@
           </li>
         </stages>
       </ThoughtDef>
-    
+    -->
 </Defs>

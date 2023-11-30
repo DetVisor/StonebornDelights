@@ -7,8 +7,8 @@
     <description>A firey alcohol with a strong flavor and burning aftertaste, favored by stoneborn artisans. The drink is highly sought after, not only for its arduous fermenting process and uncommon ingredients, but also for its unusual ability to empower the creative passions of anyone who drinks it. Caution must be taken to not drink too much forge liquor, as it inflames emotions to an almost volatile degree at a high enough dosage.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_ForgeHigh</HediffDef>
-      <HediffDef>SD_ForgeTolerance</HediffDef>
-      <HediffDef>SD_ForgeAddiction</HediffDef>
+      <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
+      <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
       <HediffDef>SD_HeavyHangover</HediffDef>
       <HediffDef>Burn</HediffDef>
     </descriptionHyperlinks>
@@ -47,7 +47,7 @@
           <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SD_ForgeTolerance</hediffDef>
+          <hediffDef>SD_DwarvenBrewTolerance</hediffDef>
           <severity>0.016</severity>
           <divideByBodySize>true</divideByBodySize>
         </li>
@@ -57,11 +57,11 @@
     <techLevel>Neolithic</techLevel>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>SD_Forge</chemical>
+        <chemical>SD_DwarvenDrink</chemical>
         <addictiveness>0.020</addictiveness>
         <minToleranceToAddict>0.25</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.22</existingAddictionSeverityOffset>
-        <needLevelOffset>0.9</needLevelOffset>
+        <existingAddictionSeverityOffset>0.35</existingAddictionSeverityOffset>
+        <needLevelOffset>0.8</needLevelOffset>
         <listOrder>10</listOrder>
       </li>
       <li>
@@ -288,7 +288,8 @@
   </ThoughtDef>
   
   <!-- Alcohol addiction -->
-  
+
+  <!--
   <ChemicalDef>
     <defName>SD_Forge</defName>
     <label>forge liquor</label>
@@ -407,5 +408,5 @@
       </li>
     </stages>
   </ThoughtDef>
-
+-->
 </Defs>

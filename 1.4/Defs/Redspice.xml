@@ -4,7 +4,7 @@
 <ThingDef ParentName="DrugBase">
     <defName>SD_Redspice</defName>
     <label>redspice</label>
-    <description>Allan, please add details.</description>
+    <description>A spicy red powder made by grinding up bull's horns. It's tangy and sour, but it's real use is in removing the nauseating effects of hangovers, with a quick snort it can quickly nullify any sickness created by stoneborn alcohols. Barrels of redspice are often found inside of taverns and mead halls, especially after feasts.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_RedspiceHigh</HediffDef>
       <HediffDef>SD_RedspiceAddiction</HediffDef>
