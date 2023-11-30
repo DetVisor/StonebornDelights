@@ -94,7 +94,7 @@
       </li>
       <li>
         <label>missing the kick</label>
-        <description>There's just nothing quite like a good ol' drink of ale.. I don't feel like doing anythin'..</description>
+        <description>There's just nothing quite like a good ol' drink. I don't feel like doing anythin'..</description>
         <baseMoodEffect>-32</baseMoodEffect>
       </li>
     </stages>
