@@ -211,7 +211,7 @@
         <defName>SD_ChemicalNeedGlimmer</defName>
         <needClass>Need_Chemical</needClass>
         <label>glimmer</label>
-        <description>Because of a glimmer addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+        <description>Because of a glimmerquartz addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
         <fallPerDay>0.345</fallPerDay>
         <listPriority>45</listPriority>
       </NeedDef>
@@ -219,8 +219,8 @@
       <HediffDef ParentName="AddictionBase">
         <defName>SD_GlimmerAddiction</defName>
         <label>glimmer hunger</label>
-        <description>A chemical addiction to glimmer. Long-term presence of go-juice has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-    \nWithout regular doses of go-juice, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+        <description>A chemical addiction to glimmerquartz. Long-term presence of glimmerquartz has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+    \nWithout regular doses of glimmerquartz, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
         <hediffClass>Hediff_Addiction</hediffClass>
         <causesNeed>SD_ChemicalNeedGlimmer</causesNeed>
         <comps>
@@ -284,7 +284,7 @@
       <HediffDef ParentName="DrugToleranceBase">
         <defName>SD_GlimmerTolerance</defName>
         <label>glimmer tolerance</label>
-        <description>A built-up tolerance to glimmer. The more severe this tolerance is, the more glimmerquartz it takes to get the same effect.</description>
+        <description>A built-up tolerance to glimmerquartz. The more severe this tolerance is, the more glimmerquartz it takes to get the same effect.</description>
         <comps>
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.010</severityPerDay>
