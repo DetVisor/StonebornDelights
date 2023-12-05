@@ -24,7 +24,7 @@
     <defName>SD_Chemical_DwarvenDrink</defName>
     <needClass>Need_Chemical</needClass>
     <label>dwarven brews</label>
-    <description>Because of an forge liquor addiction, this person needs to regularly consume it to avoid withdrawal symptoms.</description>
+    <description>Because of an addiction to dwarven alcohols, this person needs to regularly consume them to avoid withdrawal symptoms.</description>
     <listPriority>35</listPriority>
   </NeedDef>
 

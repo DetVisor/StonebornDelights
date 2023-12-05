@@ -4,7 +4,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_RageElixir</defName>
         <label>rage elixir</label>
-        <description>A chemical mix concocted by stoneborn chemists that fills the mind with images of anger and death, turning even the most peaceful people into raging maniacs that faun at the idea of murdering everyone around them.\n\The elixir has unique numbing properties that disconnect a large majority of pain receptors, allowing the users to stay in the battle longer, this and the decent healing effects of the solution create the perfect cocktail for melee warriors and berserkers alike.</description>
+        <description>A chemical mix concocted by stoneborn chemists that fills the mind with images of anger and death, turning even the most peaceful people into raging maniacs that faun at the idea of murdering everyone around them.\n\The elixir has unique numbing properties that disconnect a large majority of pain receptors, allowing the users to stay in the battle longer, this and the decent healing effects of the solution create the perfect cocktail for melee warriors and berserkers alike, or a risky health boost for wounded soldiers.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_ElixirHigh</HediffDef>
           <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
@@ -70,7 +70,7 @@
         <hediffClass>Hediff_High</hediffClass>
         <label>high on rage elixir</label>
         <labelNoun>a rage elixir high</labelNoun>
-        <description>Rage Elixir in the bloodstream. It supercharges combat-related abilities, and instantly increases psyfocus when first injected.</description>
+        <description>Rage elixir in the bloodstream. It fills the user's mind with gruesome imagery, but also enhances natural healing.</description>
         <defaultLabelColor>(1,0,0.1)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>

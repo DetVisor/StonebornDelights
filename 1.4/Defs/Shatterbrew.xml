@@ -101,7 +101,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>SD_FermentedShatterbrew</defName>
         <label>fermented shatterbrew</label>
-        <description>An oversized alcoholic stew chock-full of meat, plant matter and stoutcap. It needs to be fermented for over a quadrum to be enjoyable, but when drank it functions as an entire buffet in a pot, which leaves you nicely fed, and quite tipsy. Stoneborn typically find pride in smashing the vessel after downing it's contents, hence the name, and shatterbrew drinking competitions are a common pastime in their fortresses.</description>
+        <description>An oversized alcoholic stew chock-full of meat, plant matter and stoutcap. Fully fermented, and can be drank.</description>
         <descriptionHyperlinks>
           <HediffDef>SD_ShatterbrewHigh</HediffDef>
           <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
