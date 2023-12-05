@@ -18,12 +18,19 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
+		<li>
+			<packageId>syrchalis.processor.framework</packageId>
+			<displayName>[SYR] Processor Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Syrchalis/ProcessorFramework</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>syrchalis.processor.framework</li>
 	</loadAfter>
 	<packageId>det.sbdelights</packageId>
 	<description>Enrich your stoneborne experience with a new set of recreational and useful drugs!</description>
