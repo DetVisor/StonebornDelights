@@ -21,6 +21,7 @@
           <MarketValue>36</MarketValue>
           <Mass>0.1</Mass>
         </statBases>
+        <stackLimit>25</stackLimit>
         <techLevel>Industrial</techLevel>
         <ingestible>
           <joyKind>Chemical</joyKind>

@@ -36,18 +36,22 @@
       </ThingDef>
 
 
-      <ThingDef ParentName="ChunkRockBase">
+      <ThingDef ParentName="ChunkBase">
         <defName>ChunkGlimmer</defName>
         <label>glimmerquartz chunk</label>
         <description>A chunk of glimmer. Can be cut into valuable crystals.</description>
         <graphicData>
           <texPath>Things/GlimmerMisc/GlimmerquartzChunks</texPath>
           <graphicClass>Graphic_Random</graphicClass>
-          <flipExtraRotation>60</flipExtraRotation>
+          <flipExtraRotation>80</flipExtraRotation>
         </graphicData>
+        <thingCategories>
+          <li>StoneChunks</li>
+        </thingCategories>
         <statBases>
           <Mass>14</Mass>
           <Beauty>0</Beauty>
+          <BeautyOutdoors>0</BeautyOutdoors>
           <Cleanliness>-1</Cleanliness>
         </statBases>
         <soundDrop>ChunkRock_Drop</soundDrop>
