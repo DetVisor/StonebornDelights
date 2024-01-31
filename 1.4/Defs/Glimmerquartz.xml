@@ -98,7 +98,7 @@
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
-          <MarketValue>36</MarketValue>
+          <MarketValue>10</MarketValue>
           <Mass>0.1</Mass>
         </statBases>
         <deepCommonality>0.6</deepCommonality>
