@@ -76,6 +76,9 @@
         <healthAffectsPrice>false</healthAffectsPrice>
         <rotatable>false</rotatable>
         <stackLimit>1</stackLimit>
+        <thingCategories>
+          <li>Drugs</li>
+        </thingCategories>
         <statBases>
           <WorkToMake>2500</WorkToMake>
           <MarketValue>100</MarketValue>
