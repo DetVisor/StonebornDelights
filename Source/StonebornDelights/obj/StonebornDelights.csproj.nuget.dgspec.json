@@ -46,13 +46,16 @@
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.4.*, )"
+              "version": "[1.5.4069, )"
             }
           }
         }
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {

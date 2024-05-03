@@ -6,3 +6,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\So
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\Source\StonebornDelights\obj\Debug\StonebornDelights.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.4\Assemblies\StonebornDelights.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.4\Assemblies\StonebornDelights.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.5\Assemblies\StonebornDelights.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StonebornDelights\1.5\Assemblies\StonebornDelights.pdb
