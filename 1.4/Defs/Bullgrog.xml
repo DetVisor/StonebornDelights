@@ -4,7 +4,7 @@
   <ThingDef MayRequire="det.stonebornfaction" ParentName="DrugBase">
     <defName>SD_Bullgrog</defName>
     <label>bullgrog</label>
-    <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
+    <description>An odd alcoholic beverage produced inside of the bodies of browbulls which is then secreted from their skin, it seems to either be a method of purging the body of dangerous chemicals or a unique way to protect themselves against predators, either way, it seems palatable atleast to the stoneborn, and when drunk it makes you feel quite unstoppable, and hungry.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_BullgrogHigh</HediffDef>
       <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
@@ -129,6 +129,7 @@
 
           <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
           <socialFightChanceFactor>1.1</socialFightChanceFactor>
+          <StaggerDurationFactor>0.9</StaggerDurationFactor>
         </li>
 		
         <li>
@@ -144,6 +145,7 @@
 
           <hungerRateFactorOffset>0.35</hungerRateFactorOffset>		  
           <socialFightChanceFactor>1.3</socialFightChanceFactor>
+          <StaggerDurationFactor>0.7</StaggerDurationFactor>
             <capMods>
 			  <li>
 			   <capacity>Moving</capacity>
@@ -166,6 +168,7 @@
           <hungerRateFactorOffset>0.75</hungerRateFactorOffset>	
           <socialFightChanceFactor>1.8</socialFightChanceFactor>
           <vomitMtbDays>0.45</vomitMtbDays>
+          <StaggerDurationFactor>0.55</StaggerDurationFactor>
 		  
           <tale>Drunk</tale>
 		  
@@ -189,6 +192,7 @@
 		  
           <hungerRateFactorOffset>0.95</hungerRateFactorOffset>	
           <socialFightChanceFactor>2.1</socialFightChanceFactor>
+          <StaggerDurationFactor>0.3</StaggerDurationFactor>
             <capMods>
 			  <li>
 			   <capacity>Moving</capacity>

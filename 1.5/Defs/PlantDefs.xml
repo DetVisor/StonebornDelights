@@ -148,7 +148,7 @@
   <ThingDef ParentName="CavePlantBase">
     <defName>SD_Plant_BullHorns</defName>
     <label>bull's Horns</label>
-    <description>A robust root that is mainly grown and harvested for the powerful effects of it's leaves. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+    <description>A tough plant with large starchy "horns" which give it it's iconic name. The growths are spicy and make for a good ingredient. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Nutrition>0.4</Nutrition>
@@ -191,7 +191,7 @@
       <ThingDef ParentName="RoughPlantBase">
     <defName>SD_RawBullHorns</defName>
     <label>bull's horns</label>
-    <description>Raw bull's horns. A spicy and yeasty vegetable agent that is used in certain stoneborn brewing recipes.</description>
+    <description>Raw bull's horns. A spicy and starchy vegetable agent that is used in certain stoneborn brewing recipes.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
       <texPath>Things/RawBullHorns</texPath>

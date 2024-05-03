@@ -11,7 +11,7 @@
     <label>underground herbs</label>
     <tab>StonebornTab</tab>
     <description>Plant the 3 main ingredients of all good stoneborn alcohols.</description>
-    <baseCost>100</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>0.00</researchViewX>
     <researchViewY>2.75</researchViewY>
@@ -26,6 +26,9 @@
     <techLevel>Neolithic</techLevel>
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.40</researchViewY>
+    <prerequisites>
+      <li>SD_DwarvenDrugPlants</li>
+    </prerequisites>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
