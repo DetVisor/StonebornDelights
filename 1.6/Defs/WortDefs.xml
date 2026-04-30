@@ -1,47 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!--
-<RecipeDef>
-    <defName>SD_Make_ElixirMush</defName>
-    <label>make elixir mush</label>
-    <description>Make elixir mush from bladeroot and bull's horns.</description>
-    <jobString>Making elixir mush.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Brewing</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>1200</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-    <recipeUsers>
-        <li>Brewery</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SD_RawBullHorns</li>
-            <li>SD_RawBladeroot</li>
-          </thingDefs>
-        </filter>
-        <count>15</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SD_RawBullHorns</li>
-        <li>SD_RawBladeroot</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <SD_ElixirMush>5</SD_ElixirMush>
-    </products>
-  </RecipeDef>
--->
+
   <ThingDef ParentName="ResourceBase">
     <defName>SD_ElixirMush</defName>
     <label>elixir mush</label>
-    <description>Un-fermented elixir, with a very pungent odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
+    <description>Un-fermented elixir, with a very pungent odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable elixir.</description>
     <graphicData>
       <texPath>Things/ElixirMush</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -63,17 +26,6 @@
         <SD_RawBullHorns>20</SD_RawBullHorns>
         <SD_RawBladeroot>10</SD_RawBladeroot>
       </costList>
-    <recipeMaker>
-        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-        <workSkill>Cooking</workSkill>
-        <recipeUsers>
-            <li>Brewery</li>
-        </recipeUsers>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Brewing</soundWorking>
-        <workAmount>1200</workAmount>
-        <targetCountAdjustment>5</targetCountAdjustment>
-    </recipeMaker>
     <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -86,7 +38,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SD_LiquorSmush</defName>
     <label>liquor smush</label>
-    <description>Un-fermented liquor, with a strong and spicy odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer.</description>
+    <description>Un-fermented liquor, with a strong and spicy odor. This substance needs to ferment in a fermenting barrel before it becomes drinkable liquor.</description>
     <graphicData>
       <texPath>Things/LiquorSmush</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -128,7 +80,7 @@
   <RecipeDef>
     <defName>SD_MakeLiquorSmush</defName>
     <label>make forge smush</label>
-    <description>Make forge smush from stoutcap and bull's horns, and a random chunk.</description>
+    <description>Make forge smush from stoutcap and bull's horns, and a stone chunk.</description>
     <jobString>Making wort.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
@@ -184,7 +136,7 @@
   <RecipeDef>
     <defName>SD_MakeElixirMush</defName>
     <label>make elixir mush</label>
-    <description>Make elixir smush from bladeroot and bull's horns..</description>
+    <description>Make elixir smush from bladeroot and bull's horns.</description>
     <jobString>Making elixir mush.</jobString>
     <workSpeedStat>DrugCookingSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>

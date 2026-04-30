@@ -112,7 +112,7 @@
         <description>Alkahest mechanites in the body. Alkahest mechanites decohere over time; only regular doses of fresh alkahest can prevent this process.
     \nWithout alkahest , the mechanite decoherence will reach a critical state, causing the victim to lose themselves.</description>
         <hediffClass>Hediff_Addiction</hediffClass>
-        <causesNeed>SD_Chemical_Alkahest</causesNeed>
+        <chemicalNeed>SD_Chemical_Alkahest</chemicalNeed>
         <everCurableByItem>false</everCurableByItem>
         <stages>
           <li>

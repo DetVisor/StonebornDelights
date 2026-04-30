@@ -226,7 +226,7 @@
         <description>A chemical addiction to glimmerquartz. Long-term presence of glimmerquartz has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
     \nWithout regular doses of glimmerquartz, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
         <hediffClass>Hediff_Addiction</hediffClass>
-        <causesNeed>SD_ChemicalNeedGlimmer</causesNeed>
+        <chemicalNeed>SD_ChemicalNeedGlimmer</chemicalNeed>
         <comps>
           <li Class="HediffCompProperties_SeverityPerDay">
             <severityPerDay>-0.065</severityPerDay>

@@ -4,7 +4,7 @@
 <ThingDef ParentName="OrganicProductBase">
     <defName>SD_Feywing</defName>
     <label>feywing</label>
-    <description>The torn off wings of a fey. Somehow, some intrepid dwarf thought to roll and smoke these like a joint, and now it has become a sought after drug due to its uniquely potent high.</description>
+    <description>The torn off wings of a fey. Somehow, some intrepid stoneborn thought to roll and smoke these like a joint, and now it has become a sought after drug due to its uniquely potent high.</description>
     <graphicData>
       <texPath>Things/Feywing</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -253,7 +253,7 @@
     <description>A chemical addiction to feywing. Long-term use of feywing has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
 \nWithout regular doses of feywing, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>SD_Chemical_Feywing</causesNeed>
+    <chemicalNeed>SD_Chemical_Feywing</chemicalNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0300</severityPerDay>

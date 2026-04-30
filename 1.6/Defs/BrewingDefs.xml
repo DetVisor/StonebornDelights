@@ -48,7 +48,7 @@
     <description>A chemical addiction to various dwarven brews. Their long-term presence has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
 \nWithout regular doses, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>SD_Chemical_DwarvenDrink</causesNeed>
+    <chemicalNeed>SD_Chemical_DwarvenDrink</chemicalNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0245</severityPerDay>
@@ -158,7 +158,8 @@
   <unfueledFactor>0.0</unfueledFactor>
   <fuelUseFactor>1.0</fuelUseFactor>
   <filledGraphicSuffix>_wine</filledGraphicSuffix>
-  <usesQuality>false</usesQuality>
+  <usesQuality>true</usesQuality>
+  <qualityDays>(12, 18, 24, 30, 36, 42, 48)</qualityDays>
   <customLabel>added</customLabel>
   <destroyChance>0.0</destroyChance>
   <bonusOutputs>
@@ -384,7 +385,7 @@
   <dropIngredients>false</dropIngredients>
   <showProductIcon>false</showProductIcon>
   <barOffset>(0.0, 0.45)</barOffset>
-  <barScale>(0.3, 6)</barScale>
+  <barScale>(1.2, 1.2)</barScale>
   <colorCoded>true</colorCoded>
   <processes>
     <li>SD_ShroomaleBrewing</li>

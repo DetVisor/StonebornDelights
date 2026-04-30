@@ -4,7 +4,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>SD_Sweetwine</defName>
     <label>sweetwine</label>
-    <description>A flavorful ale first homebrewed by stoneborn miners. Its ingredients make for a potent, intoxicating drink that's perfect for chasing down tavern fare. Many of its heaviest drinkers swear by their beard that it steadies their aim, usually while they slur over their own words.</description>
+    <description>An almost syrupy, sugary wine brewed directly from glimmerquartz. It is deceptively simple to brew, however the single ingredient takes quite a long time to properly ferment: when done correctly, it becomes a smooth drink that can cheer up even the saddest stoneborn.</description>
     <descriptionHyperlinks>
       <HediffDef>SD_SWHigh</HediffDef>
       <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
@@ -68,6 +68,9 @@
         <existingAddictionSeverityOffset>0.22</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>10</listOrder>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
       </li>
       <li>
         <compClass>CompEquippable</compClass>

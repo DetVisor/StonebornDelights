@@ -49,7 +49,7 @@
     <ThingDef ParentName="RoughPlantBase">
     <defName>SD_RawStoutcap</defName>
     <label>stoutcap</label>
-    <description>Raw stoutcap. A flavoring and preserving agent that is necessary for making shroom ale.</description>
+    <description>Raw stoutcap. A soft mushroom that is necessary for making shroomale.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
       <texPath>Things/RawStoutcap</texPath>
@@ -77,7 +77,7 @@
   <ThingDef ParentName="CavePlantBase">
     <defName>SD_Plant_Bladeroot</defName>
     <label>bladeroot</label>
-    <description>A robust root that is mainly grown and harvested for the powerful effects of it's leaves. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+    <description>A robust root that is mainly grown and harvested for the powerful effects of its leaves. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -120,7 +120,7 @@
       <ThingDef ParentName="RoughPlantBase">
     <defName>SD_RawBladeroot</defName>
     <label>bladeroot</label>
-    <description>Raw bladeroot. A flavoring and preserving agent that is necessary for making shroom ale.</description>
+    <description>Raw bladeroot. A hard silvery leaf that is useful for its effects when smoked.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
       <texPath>Things/RawBladeroot</texPath>
@@ -148,7 +148,7 @@
   <ThingDef ParentName="CavePlantBase">
     <defName>SD_Plant_BullHorns</defName>
     <label>bull's Horns</label>
-    <description>A robust root that is mainly grown and harvested for the powerful effects of it's leaves. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+    <description>A tough plant with large starchy "horns" which give it it's iconic name. The growths are spicy and make for a good ingredient. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Nutrition>0.4</Nutrition>
@@ -191,7 +191,7 @@
       <ThingDef ParentName="RoughPlantBase">
     <defName>SD_RawBullHorns</defName>
     <label>bull's horns</label>
-    <description>Raw bull's horns. A spicy and yeasty vegetable agent that is used in certain stoneborn brewing recipes.</description>
+    <description>Raw bull's horns. A spicy and starchy vegetable agent that is used in certain stoneborn brewing recipes.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
       <texPath>Things/RawBullHorns</texPath>
